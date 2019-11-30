@@ -120,9 +120,10 @@ public class ReadResourceHrmsCmd {
                         bean.setTempfield16(tempString);
                         break;
                 }
-
             }
         }
         return bean;
     }
+
+
 }
