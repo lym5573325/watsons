@@ -13,13 +13,6 @@ public class ResourceHrmsBean {
         this.workcode = workcode;
     }
 
-    public static int getWorkcodeLength() {
-        return workcodeLength;
-    }
-
-    public static void setWorkcodeLength(int workcodeLength) {
-        ResourceHrmsBean.workcodeLength = workcodeLength;
-    }
 
     public String getTempfield1() {
         return tempfield1;
@@ -29,13 +22,6 @@ public class ResourceHrmsBean {
         this.tempfield1 = tempfield1;
     }
 
-    public static int getTempfield1Length() {
-        return tempfield1Length;
-    }
-
-    public static void setTempfield1Length(int tempfield1Length) {
-        ResourceHrmsBean.tempfield1Length = tempfield1Length;
-    }
 
     public String getCompanystartdate() {
         return companystartdate;
@@ -45,28 +31,12 @@ public class ResourceHrmsBean {
         this.companystartdate = companystartdate;
     }
 
-    public static int getCompanystartdateLength() {
-        return companystartdateLength;
+    public String getJobtitleName() {
+        return jobtitleName;
     }
 
-    public static void setCompanystartdateLength(int companystartdateLength) {
-        ResourceHrmsBean.companystartdateLength = companystartdateLength;
-    }
-
-    public String getJobtitle() {
-        return jobtitle;
-    }
-
-    public void setJobtitle(String jobtitle) {
-        this.jobtitle = jobtitle;
-    }
-
-    public static int getJobtitleLength() {
-        return jobtitleLength;
-    }
-
-    public static void setJobtitleLength(int jobtitleLength) {
-        ResourceHrmsBean.jobtitleLength = jobtitleLength;
+    public void setJobtitleName(String jobtitleName) {
+        this.jobtitleName = jobtitleName;
     }
 
     public String getDepartmentcode() {
@@ -77,28 +47,12 @@ public class ResourceHrmsBean {
         this.departmentcode = departmentcode;
     }
 
-    public static int getDepartmentcodeLength() {
-        return departmentcodeLength;
-    }
-
-    public static void setDepartmentcodeLength(int departmentcodeLength) {
-        ResourceHrmsBean.departmentcodeLength = departmentcodeLength;
-    }
-
     public String getTempfield2() {
         return tempfield2;
     }
 
     public void setTempfield2(String tempfield2) {
         this.tempfield2 = tempfield2;
-    }
-
-    public static int getTempfield2Length() {
-        return tempfield2Length;
-    }
-
-    public static void setTempfield2Length(int tempfield2Length) {
-        ResourceHrmsBean.tempfield2Length = tempfield2Length;
     }
 
     public String getLastname() {
@@ -109,13 +63,6 @@ public class ResourceHrmsBean {
         this.lastname = lastname;
     }
 
-    public static int getLastnameLength() {
-        return lastnameLength;
-    }
-
-    public static void setLastnameLength(int lastnameLength) {
-        ResourceHrmsBean.lastnameLength = lastnameLength;
-    }
 
     public String getTempfield3() {
         return tempfield3;
@@ -125,13 +72,6 @@ public class ResourceHrmsBean {
         this.tempfield3 = tempfield3;
     }
 
-    public static int getTempfield3Length() {
-        return tempfield3Length;
-    }
-
-    public static void setTempfield3Length(int tempfield3Length) {
-        ResourceHrmsBean.tempfield3Length = tempfield3Length;
-    }
 
     public String getTempfield4() {
         return tempfield4;
@@ -141,13 +81,6 @@ public class ResourceHrmsBean {
         this.tempfield4 = tempfield4;
     }
 
-    public static int getTempfield4Length() {
-        return tempfield4Length;
-    }
-
-    public static void setTempfield4Length(int tempfield4Length) {
-        ResourceHrmsBean.tempfield4Length = tempfield4Length;
-    }
 
     public String getUsekind() {
         return usekind;
@@ -157,13 +90,6 @@ public class ResourceHrmsBean {
         this.usekind = usekind;
     }
 
-    public static int getUsekindLength() {
-        return usekindLength;
-    }
-
-    public static void setUsekindLength(int usekindLength) {
-        ResourceHrmsBean.usekindLength = usekindLength;
-    }
 
     public String getTempfield5() {
         return tempfield5;
@@ -171,14 +97,6 @@ public class ResourceHrmsBean {
 
     public void setTempfield5(String tempfield5) {
         this.tempfield5 = tempfield5;
-    }
-
-    public static int getTempfield5Length() {
-        return tempfield5Length;
-    }
-
-    public static void setTempfield5Length(int tempfield5Length) {
-        ResourceHrmsBean.tempfield5Length = tempfield5Length;
     }
 
     public String getPhone() {
@@ -189,28 +107,12 @@ public class ResourceHrmsBean {
         this.phone = phone;
     }
 
-    public static int getPhoneLength() {
-        return phoneLength;
-    }
-
-    public static void setPhoneLength(int phoneLength) {
-        ResourceHrmsBean.phoneLength = phoneLength;
-    }
-
     public String getTempfield6() {
         return tempfield6;
     }
 
     public void setTempfield6(String tempfield6) {
         this.tempfield6 = tempfield6;
-    }
-
-    public static int getTempfield6Length() {
-        return tempfield6Length;
-    }
-
-    public static void setTempfield6Length(int tempfield6Length) {
-        ResourceHrmsBean.tempfield6Length = tempfield6Length;
     }
 
     public String getTempfield7() {
@@ -221,14 +123,6 @@ public class ResourceHrmsBean {
         this.tempfield7 = tempfield7;
     }
 
-    public static int getTempfield7Length() {
-        return tempfield7Length;
-    }
-
-    public static void setTempfield7Length(int tempfield7Length) {
-        ResourceHrmsBean.tempfield7Length = tempfield7Length;
-    }
-
     public String getTempfield8() {
         return tempfield8;
     }
@@ -237,13 +131,6 @@ public class ResourceHrmsBean {
         this.tempfield8 = tempfield8;
     }
 
-    public static int getTempfield8Length() {
-        return tempfield8Length;
-    }
-
-    public static void setTempfield8Length(int tempfield8Length) {
-        ResourceHrmsBean.tempfield8Length = tempfield8Length;
-    }
 
     public String getTempfield9() {
         return tempfield9;
@@ -251,14 +138,6 @@ public class ResourceHrmsBean {
 
     public void setTempfield9(String tempfield9) {
         this.tempfield9 = tempfield9;
-    }
-
-    public static int getTempfield9Length() {
-        return tempfield9Length;
-    }
-
-    public static void setTempfield9Length(int tempfield9Length) {
-        ResourceHrmsBean.tempfield9Length = tempfield9Length;
     }
 
     public String getTempfield10() {
@@ -269,28 +148,12 @@ public class ResourceHrmsBean {
         this.tempfield10 = tempfield10;
     }
 
-    public static int getTempfield10Length() {
-        return tempfield10Length;
-    }
-
-    public static void setTempfield10Length(int tempfield10Length) {
-        ResourceHrmsBean.tempfield10Length = tempfield10Length;
-    }
-
     public String getTempfield11() {
         return tempfield11;
     }
 
     public void setTempfield11(String tempfield11) {
         this.tempfield11 = tempfield11;
-    }
-
-    public static int getTempfield11Length() {
-        return tempfield11Length;
-    }
-
-    public static void setTempfield11Length(int tempfield11Length) {
-        ResourceHrmsBean.tempfield11Length = tempfield11Length;
     }
 
     public String getTempfield12() {
@@ -301,28 +164,12 @@ public class ResourceHrmsBean {
         this.tempfield12 = tempfield12;
     }
 
-    public static int getTempfield12Length() {
-        return tempfield12Length;
-    }
-
-    public static void setTempfield12Length(int tempfield12Length) {
-        ResourceHrmsBean.tempfield12Length = tempfield12Length;
-    }
-
     public String getTempfield13() {
         return tempfield13;
     }
 
     public void setTempfield13(String tempfield13) {
         this.tempfield13 = tempfield13;
-    }
-
-    public static int getTempfield13Length() {
-        return tempfield13Length;
-    }
-
-    public static void setTempfield13Length(int tempfield13Length) {
-        ResourceHrmsBean.tempfield13Length = tempfield13Length;
     }
 
     public String getTempfield14() {
@@ -333,28 +180,12 @@ public class ResourceHrmsBean {
         this.tempfield14 = tempfield14;
     }
 
-    public static int getTempfield14Length() {
-        return tempfield14Length;
-    }
-
-    public static void setTempfield14Length(int tempfield14Length) {
-        ResourceHrmsBean.tempfield14Length = tempfield14Length;
-    }
-
     public String getTempfield15() {
         return tempfield15;
     }
 
     public void setTempfield15(String tempfield15) {
         this.tempfield15 = tempfield15;
-    }
-
-    public static int getTempfield15Length() {
-        return tempfield15Length;
-    }
-
-    public static void setTempfield15Length(int tempfield15Length) {
-        ResourceHrmsBean.tempfield15Length = tempfield15Length;
     }
 
     public String getTempfield16() {
@@ -365,13 +196,6 @@ public class ResourceHrmsBean {
         this.tempfield16 = tempfield16;
     }
 
-    public static int getTempfield16Length() {
-        return tempfield16Length;
-    }
-
-    public static void setTempfield16Length(int tempfield16Length) {
-        ResourceHrmsBean.tempfield16Length = tempfield16Length;
-    }
 
     public static List<Integer> getLengthList() {
         return lengthList;
@@ -391,8 +215,8 @@ public class ResourceHrmsBean {
     private String companystartdate;
     private static int companystartdateLength = 8;
     //职位
-    private String jobtitle;
-    private static int jobtitleLength = 120;
+    private String jobtitleName;
+    private static int jobtitleNameLength = 120;
     //所在组织代码
     private String departmentcode;
     private static int departmentcodeLength = 240;
@@ -458,16 +282,70 @@ public class ResourceHrmsBean {
         return sumLength;
     }
 
-    private final int sumLength = workcodeLength + tempfield1Length + companystartdateLength + jobtitleLength + departmentcodeLength
+    private final int sumLength = workcodeLength + tempfield1Length + companystartdateLength + jobtitleNameLength + departmentcodeLength
             + tempfield2Length + lastnameLength + tempfield3Length + tempfield4Length + usekindLength + tempfield5Length
             + phoneLength + tempfield6Length + tempfield7Length + tempfield8Length + tempfield9Length + tempfield10Length
             + tempfield11Length + tempfield12Length + tempfield13Length + tempfield14Length + tempfield15Length + tempfield16Length;
+
+    /**
+     * 转换字段
+     */
+    //直接上级
+    private String managerid ;
+    //部门ID
+    private String departmentid ;
+    //分部ID
+    private String subcompanyid1 ;
+    //职位ID
+    private String jobtitle;
+    //状态
+    private String status;
+
+    public String getManagerid() {
+        return managerid;
+    }
+
+    public void setManagerid(String managerid) {
+        this.managerid = managerid;
+    }
+
+    public String getDepartmentid() {
+        return departmentid;
+    }
+
+    public void setDepartmentid(String departmentid) {
+        this.departmentid = departmentid;
+    }
+
+    public String getSubcompanyid1() {
+        return subcompanyid1;
+    }
+
+    public void setSubcompanyid1(String subcompanyid1) {
+        this.subcompanyid1 = subcompanyid1;
+    }
+
+    public String getJobtitle() {
+        return jobtitle;
+    }
+
+    public void setJobtitle(String jobtitle) {
+        this.jobtitle = jobtitle;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
     private static List<Integer> lengthList = new ArrayList<Integer>(){{
         add(workcodeLength);
         add(tempfield1Length);
         add(companystartdateLength);
-        add(jobtitleLength);
+        add(jobtitleNameLength);
         add(departmentcodeLength);
         add(tempfield2Length);
         add(lastnameLength);
@@ -489,13 +367,15 @@ public class ResourceHrmsBean {
         add(tempfield16Length);
     }};
 
+
+
     @Override
     public String toString(){
         StringBuffer sb = new StringBuffer();
         sb.append("StaffID").append(":").append(workcode).append(",");
         sb.append("Phone").append(":").append(tempfield1).append(",");
         sb.append("JoinDate").append(":").append(companystartdate).append(",");
-        sb.append("Position").append(":").append(jobtitle).append(",");
+        sb.append("Position").append(":").append(jobtitleName).append(",");
         sb.append("OrgID").append(":").append(departmentcode).append(",");
         sb.append("SeparationDate").append(":").append(tempfield2).append(",");
         sb.append("ChineseName").append(":").append(lastname).append(",");

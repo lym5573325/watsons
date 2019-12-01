@@ -2,7 +2,6 @@ package com.engine.sync.util;
 
 import weaver.conn.RecordSet;
 import weaver.general.Util;
-import weaver.hrm.company.DepartmentComInfo;
 
 public class OrgUtil {
 

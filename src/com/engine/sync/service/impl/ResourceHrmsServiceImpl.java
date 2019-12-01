@@ -2,6 +2,7 @@ package com.engine.sync.service.impl;
 
 import com.engine.sync.cmd.ResourceHrms.ReadResourceHrmsCmd;
 import com.engine.sync.service.ResourceHrmsService;
+import weaver.hrm.resource.ResourceComInfo;
 
 import java.io.*;
 
@@ -33,6 +34,15 @@ public class ResourceHrmsServiceImpl implements ResourceHrmsService {
                         e.printStackTrace();
                     }
                 }
+            }
+
+            //清除人员缓存
+            try {
+                ResourceComInfo resourceComInfo = new ResourceComInfo();
+                resourceComInfo.removeResourceCache();
+            } catch (Exception e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
             }
         }
     }

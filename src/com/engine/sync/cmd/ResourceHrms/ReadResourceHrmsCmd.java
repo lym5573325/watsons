@@ -1,7 +1,14 @@
 package com.engine.sync.cmd.ResourceHrms;
 
+import com.engine.sync.entity.OrganizationHrmsBean;
 import com.engine.sync.entity.ResourceHrmsBean;
+import com.engine.sync.util.OrgUtil;
 import org.apache.commons.lang.StringUtils;
+import weaver.general.Util;
+import weaver.interfaces.lym.util.CalendarMethods;
+
+import java.text.ParseException;
+import java.util.Date;
 
 public class ReadResourceHrmsCmd {
 
@@ -121,6 +128,43 @@ public class ReadResourceHrmsCmd {
                         break;
                 }
             }
+
+            /**
+             * 转换信息
+             */
+            //直接上级
+            bean.setManagerid("");
+            //部门
+            bean.setDepartmentid(OrgUtil.getOrgidByCode(bean.getDepartmentcode())+"");
+            //分部
+            bean.setSubcompanyid1(OrganizationHrmsBean.subcompanyid+"");
+            //职位
+            bean.setJobtitle("");
+
+            /**
+             * 特殊处理信息
+             */
+            //离职信息==>如果有离职日期，离职当天状态为离职
+            if(Util.null2String(bean.getTempfield2()).length()==8){//格式yyyyMMdd
+                String temp = bean.getTempfield2().substring(0,4)+"-"+bean.getTempfield2().substring(4,6)+"-"+bean.getTempfield2().substring(6,8);
+                try {
+                    if (CalendarMethods.dateFormat.parse(temp).getTime()<new Date().getTime())//未离职
+                        bean.setStatus("1");
+                    else//已离职
+                        bean.setStatus("5");
+                }catch (ParseException e){
+                    bean.setStatus("1");
+                }
+            }
+
+            //分公司(优先取手工维护（Personal）)
+            if(bean.getTempfield8().length()>0) bean.setTempfield7(bean.getTempfield8());
+            //部门代码
+            if(bean.getTempfield10().length()>0) bean.setTempfield9(bean.getTempfield10());
+            //成本中心
+            if(bean.getTempfield12().length()>0) bean.setTempfield11(bean.getTempfield12());
+
+
         }
         return bean;
     }
