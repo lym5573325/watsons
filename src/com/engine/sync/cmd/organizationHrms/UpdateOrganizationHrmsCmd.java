@@ -12,7 +12,8 @@ public class UpdateOrganizationHrmsCmd {
         int depid = 0;
         if(departmentcode.length()>0 && (depid = OrgUtil.getOrgidByCode(departmentcode))>0) {
             new BaseBean().writeLog("更新部门 id:"+depid + "code:"+departmentcode);
-            return rs.executeUpdate("update hrmdepartment set departmentname=?,departmentmark=?,supdepid=?,subcompanyid1=?,tlevel=?,creater=?,created=?,modifier=?,modified=? where id = "+depid);
+            return rs.executeUpdate("update hrmdepartment set departmentname=?,departmentmark=?,supdepid=?,subcompanyid1=?,tlevel=?,creater=?,created=?,modifier=?,modified=? where id = ?",
+                    departmentname,departmentmark,supdepid,subcompanyid1+"", tlevel+"",creater+"",created,modifier+"",modified, depid);
         }else return false;
     }
 

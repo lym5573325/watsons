@@ -2,7 +2,7 @@ package com.engine.sync.entity;
 
 public class OrganizationHrmsBean {
 
-    public static final int subcompanyid = 1;
+    public static final int subcompanyid = 9;
 
     public String getHrms_OrgId() {
         return hrms_OrgId;

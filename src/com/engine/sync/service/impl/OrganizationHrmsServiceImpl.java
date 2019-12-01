@@ -1,7 +1,11 @@
 package com.engine.sync.service.impl;
 
+import com.engine.sync.cmd.organizationHrms.HandleOrganizationHrmsCmd;
 import com.engine.sync.cmd.organizationHrms.ReadOrganizationHrmsCmd;
+import com.engine.sync.entity.OrganizationHrmsBean;
 import com.engine.sync.service.OrganizationHrmsService;
+import com.sun.org.apache.bcel.internal.generic.NEW;
+import weaver.general.BaseBean;
 import weaver.hrm.company.DepartmentComInfo;
 import weaver.hrm.company.SubCompanyComInfo;
 
@@ -9,12 +13,11 @@ import java.io.*;
 
 public class OrganizationHrmsServiceImpl implements OrganizationHrmsService {
 
-    public static void main(String[] args){
-        new OrganizationHrmsServiceImpl().handle();
-    }
 
     public void handle(){
+        new BaseBean().writeLog("===OrganizationHrmsServiceImpl===");
         File file = new File("C:\\Users\\Ming\\Desktop\\WTCCN-ERMS-ORG-20190903103812.txt");
+        HandleOrganizationHrmsCmd cmd = new HandleOrganizationHrmsCmd();
         if(file.exists()){
             BufferedReader reader = null;
             String tempString = null;
@@ -23,8 +26,13 @@ public class OrganizationHrmsServiceImpl implements OrganizationHrmsService {
                 //reader = new BufferedReader(new InputStreamReader(new FileInputStream(file),"UTF-8"));
                 reader = new BufferedReader(new InputStreamReader(new FileInputStream(file),"GBK"));
                 while((tempString = reader.readLine()) != null){
+                    OrganizationHrmsBean bean = new ReadOrganizationHrmsCmd(tempString).getBean();
                     //System.out.println("第" + line + "行长度:" + tempString.getBytes("gbk").length);
-                    System.out.println("Organization：{" + new ReadOrganizationHrmsCmd(tempString).getBean().toString() + "}");
+                    //System.out.println("第" + line + "行长度:" + tempString.getBytes("gbk").length);
+                    //System.out.println("Organization：{" + bean.toString() + "}");
+                    new BaseBean().writeLog("第" + line + "行长度:" + tempString.getBytes("gbk").length);
+                    new BaseBean().writeLog("Organization：{" + bean.toString() + "}");
+                    cmd.handle(bean);
                     line++;
                 }
             }catch (Exception e){
@@ -44,5 +52,8 @@ public class OrganizationHrmsServiceImpl implements OrganizationHrmsService {
         subCompanyComInfo.removeCompanyCache();
         DepartmentComInfo departmentComInfo = new DepartmentComInfo();
         departmentComInfo.removeCompanyCache();
+
     }
+
+
 }

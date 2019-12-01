@@ -16,13 +16,15 @@ public class ReadOrganizationHrmsCmd {
         OrganizationHrmsBean bean = new OrganizationHrmsBean();
         //验证数据合法性
         String[] arr = orgInfo.split(separator);
-        if(arr.length>5){
+        System.out.println("length："+arr.length);
+        if(arr.length>=5){
             for(int i=0;i<arr.length;i++){
                 String tempStr = arr[i];
+                System.out.println("tempStr:"+tempStr);
                 switch (i){
                     case 0:
                         bean.setHrms_OrgId(tempStr);
-                    break;
+                        break;
                     case 1:
                         bean.setDeptName(tempStr);
                         break;

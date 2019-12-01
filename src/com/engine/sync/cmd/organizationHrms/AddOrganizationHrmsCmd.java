@@ -5,7 +5,7 @@ import weaver.conn.RecordSet;
 public class AddOrganizationHrmsCmd {
 
     private static final String addSql = " insert into hrmdepartment (departmentcode,departmentmark,departmentname,supdepid,subcompanyid1,tlevel,creater,created,modifier,modified) " +
-            " values (?,?,?,?,?,?,?,?,?)";
+            " values (?,?,?,?,?,?,?,?,?,?)";
 
     /**
      * 新增部门
