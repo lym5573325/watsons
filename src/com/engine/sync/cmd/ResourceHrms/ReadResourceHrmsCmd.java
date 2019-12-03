@@ -3,6 +3,7 @@ package com.engine.sync.cmd.ResourceHrms;
 import com.engine.sync.entity.OrganizationHrmsBean;
 import com.engine.sync.entity.ResourceHrmsBean;
 import com.engine.sync.util.OrgUtil;
+import com.engine.sync.util.PositionUtils;
 import org.apache.commons.lang.StringUtils;
 import weaver.general.Util;
 import weaver.interfaces.lym.util.CalendarMethods;
@@ -139,7 +140,7 @@ public class ReadResourceHrmsCmd {
             //分部
             bean.setSubcompanyid1(OrganizationHrmsBean.subcompanyid+"");
             //职位
-            bean.setJobtitle("");
+            bean.setJobtitle(PositionUtils.getJobidByName(bean.getJobtitleName())+"");
 
             /**
              * 特殊处理信息
@@ -157,13 +158,19 @@ public class ReadResourceHrmsCmd {
                 }
             }
 
+            //职级    G.N.N.11=>11
+            if(StringUtils.isNotBlank(bean.getTempfield6())){
+                String[] var1 = bean.getTempfield6().split("\\.");
+                if(var1.length>0)
+                    bean.setTempfield6(var1[var1.length-1]);
+            }
+
             //分公司(优先取手工维护（Personal）)
             if(bean.getTempfield8().length()>0) bean.setTempfield7(bean.getTempfield8());
             //部门代码
             if(bean.getTempfield10().length()>0) bean.setTempfield9(bean.getTempfield10());
             //成本中心
             if(bean.getTempfield12().length()>0) bean.setTempfield11(bean.getTempfield12());
-
 
         }
         return bean;

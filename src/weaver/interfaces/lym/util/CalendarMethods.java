@@ -24,6 +24,10 @@ public class CalendarMethods {
 		return dateFormat.format(new Date()).substring(0,10);
 	}
 
+	public static String getCurrentTime2(){
+		return timeFormat2.format(new Date());
+	}
+
 	/**
 	 * 加减日期（yyyy-MM-dd）
 	 * @param date 原时间(yyyy-MM-dd)

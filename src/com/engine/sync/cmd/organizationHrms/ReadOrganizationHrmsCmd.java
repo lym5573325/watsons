@@ -45,8 +45,6 @@ public class ReadOrganizationHrmsCmd {
 
             //根据hrms_orgId获取上级部门
             bean.setSupdepid(getSupdepidByHrmsOrgID(bean.getHrms_OrgId()));
-
-
         }
         return bean;
     }

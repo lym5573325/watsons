@@ -1,4 +1,10 @@
 package com.engine.sync.service.impl;
 
-public class LocationHrmsServiceImpl {
+import com.engine.sync.service.LocationHrmsService;
+
+public class LocationHrmsServiceImpl implements LocationHrmsService {
+
+    public void handle(){
+
+    }
 }
