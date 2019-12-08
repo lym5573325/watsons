@@ -8,6 +8,9 @@ public class PositionHrmsBean {
     private String jobdepartmentCode;
     private String locationCode;
 
+    //特殊处理字段
+    private String jobtitleMark;
+
     public String getJobtitleCode() {
         return jobtitleCode;
     }
@@ -46,5 +49,25 @@ public class PositionHrmsBean {
 
     public void setLocationCode(String locationCode) {
         this.locationCode = locationCode;
+    }
+
+    public String getJobtitleMark() {
+        return jobtitleMark;
+    }
+
+    public void setJobtitleMark(String jobtitleMark) {
+        this.jobtitleMark = jobtitleMark;
+    }
+
+    @Override
+    public String toString(){
+        StringBuffer sb = new StringBuffer();
+        sb.append("jobtitleCode:").append(jobtitleCode).append(",");
+        sb.append("jobtitleName:").append(jobtitleName).append(",");
+        sb.append("jobtitleMark:").append(jobtitleMark).append(",");
+        sb.append("job_pk:").append(job_pk).append(",");
+        sb.append("jobdepartmentCode:").append(jobdepartmentCode).append(",");
+        sb.append("locationCode:").append(locationCode);
+        return sb.toString();
     }
 }

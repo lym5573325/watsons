@@ -1,10 +1,12 @@
 package com.engine.sync.cmd.ResourceHrms;
 
+import com.api.integration.Base;
 import com.engine.sync.entity.OrganizationHrmsBean;
 import com.engine.sync.entity.ResourceHrmsBean;
 import com.engine.sync.util.OrgUtil;
 import com.engine.sync.util.PositionUtils;
 import org.apache.commons.lang.StringUtils;
+import weaver.general.BaseBean;
 import weaver.general.Util;
 import weaver.interfaces.lym.util.CalendarMethods;
 
@@ -68,7 +70,7 @@ public class ReadResourceHrmsCmd {
                         bean.setCompanystartdate(tempString);
                         break;
                     case 3:
-                        bean.setJobtitle(tempString);
+                        bean.setJobtitleName(tempString);
                         break;
                     case 4:
                         bean.setDepartmentcode(tempString);
@@ -86,7 +88,7 @@ public class ReadResourceHrmsCmd {
                         bean.setTempfield4(tempString);
                         break;
                     case 9:
-                        bean.setUsekind(tempString);
+                        //bean.setUsekind(tempString);
                         break;
                     case 10:
                         bean.setTempfield5(tempString);
@@ -134,7 +136,7 @@ public class ReadResourceHrmsCmd {
              * 转换信息
              */
             //直接上级
-            bean.setManagerid("");
+            //bean.setManagerid("");
             //部门
             bean.setDepartmentid(OrgUtil.getOrgidByCode(bean.getDepartmentcode())+"");
             //分部
@@ -148,6 +150,8 @@ public class ReadResourceHrmsCmd {
             //离职信息==>如果有离职日期，离职当天状态为离职
             if(Util.null2String(bean.getTempfield2()).length()==8){//格式yyyyMMdd
                 String temp = bean.getTempfield2().substring(0,4)+"-"+bean.getTempfield2().substring(4,6)+"-"+bean.getTempfield2().substring(6,8);
+                new BaseBean().writeLog("离职日期:"+temp);
+                bean.setTempfield2(temp);
                 try {
                     if (CalendarMethods.dateFormat.parse(temp).getTime()<new Date().getTime())//未离职
                         bean.setStatus("1");
@@ -156,7 +160,17 @@ public class ReadResourceHrmsCmd {
                 }catch (ParseException e){
                     bean.setStatus("1");
                 }
+                new BaseBean().writeLog("状态:"+bean.getStatus());
+            }else{
+                bean.setStatus("1");
             }
+
+            //入职日期
+            if(StringUtils.isNotBlank(bean.getCompanystartdate()) && bean.getCompanystartdate().length()==8){
+                String temp = bean.getCompanystartdate().substring(0,4)+"-"+bean.getCompanystartdate().substring(4,6)+"-"+bean.getCompanystartdate().substring(6,8);
+                bean.setCompanystartdate(temp);
+            }
+
 
             //职级    G.N.N.11=>11
             if(StringUtils.isNotBlank(bean.getTempfield6())){
@@ -171,7 +185,6 @@ public class ReadResourceHrmsCmd {
             if(bean.getTempfield10().length()>0) bean.setTempfield9(bean.getTempfield10());
             //成本中心
             if(bean.getTempfield12().length()>0) bean.setTempfield11(bean.getTempfield12());
-
         }
         return bean;
     }

@@ -4,17 +4,19 @@ import com.engine.sync.entity.ResourceHrmsBean;
 import com.engine.sync.util.LocationUtils;
 import com.engine.sync.util.ResourceUtils;
 import weaver.conn.RecordSet;
+import weaver.general.BaseBean;
 
 public class AddResourceHrmsCmd {
 
-    private static final String addSql = "insert into hrmresource (workcode,lastname,managerid,departmentid,subcompanyid,jobtitle,mobile,usekind,companystartdate,statues,joblevel)" +
-            "values (?,?,?,?,?,?,?,?,?,?,?)";
+    private static final String addSql = "insert into hrmresource (id,workcode,lastname,managerid,departmentid,subcompanyid1,jobtitle,mobile,usekind,companystartdate,status,joblevel)" +
+            "values (?,?,?,?,?,?,?,?,?,?,?,?)";
 
 
     //protected boolean execute(String workcode, String lastname, String managerid,String departmentid, String subcompanyid1 ){
     protected boolean execute(ResourceHrmsBean bean){
+        new BaseBean().writeLog("新增人员:"+bean.toString());
         RecordSet rs = new RecordSet();
-        if(rs.executeUpdate(addSql, bean.getWorkcode(),bean.getLastname(),bean.getManagerid(),bean.getDepartmentid(),
+        if(rs.executeUpdate(addSql,ResourceUtils.getMaxId(), bean.getWorkcode(),bean.getLastname(),bean.getManagerid(),bean.getDepartmentid(),
                 bean.getSubcompanyid1(),bean.getJobtitle(),bean.getPhone(),bean.getUsekind(),bean.getCompanystartdate(),
                 bean.getStatus(), bean.getTempfield6())
         ) cusData(bean);
@@ -35,16 +37,17 @@ public class AddResourceHrmsCmd {
      * field10==>   地点
      */
     private static final String sql2 = "insert into cus_fielddata(id,scopeid,scope,field0,field1,field2,field3,field4,field5,field6,field7,field8,field9,field10)" +
-            " values (?,?,?,?,?,?,?,?,?,?,?,?,?.?)";
+            " values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
     /**
      * 新增人员自定义属性
      * @param bean
      * @return
      */
-    private boolean cusData(ResourceHrmsBean bean){
+    protected boolean cusData(ResourceHrmsBean bean){
+        new BaseBean().writeLog("新增人员自定义字段表");
         RecordSet rs = new RecordSet();
-        rs.executeUpdate(sql2, ResourceUtils.getUidByWorkcode(bean.getWorkcode()), "1","",
+        rs.executeUpdate(sql2, ResourceUtils.getUidByWorkcode(bean.getWorkcode()), "1","HrmCustomFieldByInfoType",
                 bean.getTempfield2(), bean.getTempfield3(), bean.getTempfield4(), bean.getTempfield7(),bean.getTempfield9(), bean.getTempfield11(),
                 bean.getTempfield14(), bean.getTempfield15(), bean.getTempfield16(), bean.getTempfield5(), LocationUtils.getLocationIdByCode(bean.getTempfield13()));
         return true;

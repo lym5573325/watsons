@@ -18,7 +18,7 @@ public class ReadPositionHrmsCmd {
         //验证数据合法性
         String[] arr = positionInfo.split(separator);
         System.out.println("length："+arr.length);
-        if(arr.length>=5){
+        if(arr.length>=4){
             for(int i=0;i<arr.length;i++){
                 String tempStr = arr[i];
                 System.out.println("tempStr:"+tempStr);
@@ -43,8 +43,11 @@ public class ReadPositionHrmsCmd {
 
             if(StringUtils.isNotBlank(bean.getJobtitleName())){
                 String[] var1 = bean.getJobtitleName().split("\\.");
-                if(var1.length==2)  bean.setJobtitleName(var1[1]);
+                if(var1.length==2)  bean.setJobtitleMark(var1[0]);
             }
+
+            //获取职务
+            bean.setJob_pk("1");//暂时默认等于1
         }
         return bean;
     }

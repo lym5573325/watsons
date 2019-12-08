@@ -4,13 +4,15 @@ import com.engine.sync.entity.ResourceHrmsBean;
 import com.engine.sync.util.LocationUtils;
 import com.engine.sync.util.ResourceUtils;
 import weaver.conn.RecordSet;
+import weaver.general.BaseBean;
 
 public class UpdateResourceHrmsCmd {
 
     private static final String sql1 = "update hrmresource set lastname=?,managerid=?,departmentid=?," +
-            "subcompanyid=?,jobtitle=?,mobile=?,usekind=?,companystartdate=?,status=?,joblevel=? where workcode=?";
+            "subcompanyid1=?,jobtitle=?,mobile=?,usekind=?,companystartdate=?,status=?,joblevel=? where workcode=?";
 
     protected void execute(ResourceHrmsBean bean){
+        new BaseBean().writeLog("更新人员："+bean.getWorkcode());
         RecordSet rs = new RecordSet();
         if(
                 rs.executeUpdate(sql1,bean.getLastname(),bean.getManagerid(),bean.getDepartmentid(),bean.getSubcompanyid1(),
@@ -34,11 +36,22 @@ public class UpdateResourceHrmsCmd {
      */
     private static final String sql2 = "update cus_fielddata set field0=?,field1=?,field2=?,field3=?,field4=?,field5=?,field6=?,field7=?,field8=?,field9=?,field10=? where id=? and scopeid=1";
     private boolean cusData(ResourceHrmsBean bean){
+        new BaseBean().writeLog("更新人员自定义表");
         RecordSet rs = new RecordSet();
-        rs.executeUpdate(sql2,
-                bean.getTempfield2(), bean.getTempfield3(), bean.getTempfield4(), bean.getTempfield7(),bean.getTempfield9(), bean.getTempfield11(),
-                bean.getTempfield14(), bean.getTempfield15(), bean.getTempfield16(), bean.getTempfield5(), LocationUtils.getLocationIdByCode(bean.getTempfield13()),
-                ResourceUtils.getUidByWorkcode(bean.getWorkcode()));
+        int uid = ResourceUtils.getUidByWorkcode(bean.getWorkcode());
+        if(uid>0) {
+            rs.execute("select id from cus_fielddata where id="+uid+" and scopeid=1");
+            if(rs.next()) {
+                new BaseBean().writeLog("更新");
+                rs.executeUpdate(sql2,
+                        bean.getTempfield2(), bean.getTempfield3(), bean.getTempfield4(), bean.getTempfield7(), bean.getTempfield9(), bean.getTempfield11(),
+                        bean.getTempfield14(), bean.getTempfield15(), bean.getTempfield16(), bean.getTempfield5(), LocationUtils.getLocationIdByCode(bean.getTempfield13()),
+                        uid + "");
+            }else{
+                new BaseBean().writeLog("新增");
+                new AddResourceHrmsCmd().cusData(bean);
+            }
+        }
         return true;
     }
 }

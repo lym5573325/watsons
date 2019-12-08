@@ -266,8 +266,7 @@ public class ResourceHrmsBean {
     private static int tempfield12Length = 4;
     //工作地点
     private String tempfield13;
-    //private static int tempfield13Length = 60;
-    private static int tempfield13Length = 57;
+    private static int tempfield13Length = 60;
     //调店组织
     private String tempfield14;
     private static int tempfield14Length = 240;
@@ -395,6 +394,14 @@ public class ResourceHrmsBean {
         sb.append("TransOrg").append(":").append(tempfield14).append(",");
         sb.append("Region").append(":").append(tempfield15).append(",");
         sb.append("OrgChangedDate").append(":").append(tempfield16);
+
+
+        sb.append("managerid").append(":").append(managerid);
+        sb.append("departmentid").append(":").append(departmentid);
+        sb.append("subcompanyid1").append(":").append(subcompanyid1);
+        sb.append("jobtitle").append(":").append(jobtitle);
+        sb.append("status").append(":").append(status);
+
         return sb.toString();
     }
 

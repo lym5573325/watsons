@@ -3,7 +3,7 @@ package com.engine.sync.entity;
 public class LocationHrmsBean {
 
     //建模表modeID
-    public static final int modeid = 0;
+    public static final int modeid = 1;
     //建模表名
     public static final String tableName = "uf_location";
 
@@ -88,9 +88,17 @@ public class LocationHrmsBean {
         this.country = country;
     }
 
-    public static void main(String[] args){
-        LocationHrmsBean bean = new LocationHrmsBean();
-
+    @Override
+    public String toString(){
+        StringBuffer sb = new StringBuffer();
+        sb.append("code:").append(code).append(",");
+        sb.append("name:").append(name).append(",");
+        sb.append("pk_areacl:").append(pk_areacl).append(",");
+        sb.append("def1:").append(def1).append(",");
+        sb.append("def2:").append(def2).append(",");
+        sb.append("city:").append(city).append(",");
+        sb.append("province:").append(province).append(",");
+        sb.append("country:").append(country);
+        return sb.toString();
     }
-
 }

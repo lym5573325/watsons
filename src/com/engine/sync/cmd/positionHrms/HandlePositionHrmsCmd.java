@@ -9,9 +9,9 @@ public class HandlePositionHrmsCmd {
     public void handle(PositionHrmsBean bean){
         if(StringUtils.isNotBlank(bean.getJobtitleCode())){
             if(PositionUtils.getJobIdByCode(bean.getJobtitleCode()) > 0 ){
-                new AddPositionHrmsCmd().addPostion(bean);
-            }else{
                 new UpdatePositionHrmsCmd().updatePosition(bean);
+            }else{
+                new AddPositionHrmsCmd().addPostion(bean);
             }
         }
     }

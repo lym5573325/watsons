@@ -11,15 +11,14 @@ public class ResourceHrmsServiceImpl implements ResourceHrmsService {
 
     @Override
     public void handle() {
-        File file = new File("C:\\Users\\Ming\\Desktop\\Employee-19800101.txt");
+        File file = new File("C:\\Users\\Ming\\Desktop\\Employee-20191206.txt");
         if(file.exists()){
             BufferedReader reader = null;
             String tempString = null;
             int line = 1;
             try{
-                //reader = new BufferedReader(new InputStreamReader(new FileInputStream(file),"UTF-8"));
                 reader = new BufferedReader(new InputStreamReader(new FileInputStream(file),"GBK"));
-                while((tempString = reader.readLine()) != null){
+                while((tempString = reader.readLine()) != null && line<100){
                     System.out.println("第" + line + "行长度:" + tempString.getBytes("gbk").length);
                     System.out.println("beanInfo：{" + new ReadResourceHrmsCmd(tempString).getBean().toString() + "}");
                     line++;

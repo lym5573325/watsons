@@ -14,9 +14,12 @@ public class HandleResourceHrmsCmd {
     public void handle(ResourceHrmsBean bean){
         //判断人是否在系统
         if(bean.getWorkcode().length()>0) {
+            new BaseBean().writeLog("人员:"+bean.getWorkcode());
             if (ResourceUtils.getUidByWorkcode(bean.getWorkcode()) > 0) {   //人员已存在 ==>更新
+                new BaseBean().writeLog("更新");
                 ur.execute(bean);
             }else{  //人员不存在==>新增
+                new BaseBean().writeLog("新增");
                 ar.execute(bean);
             }
         }
