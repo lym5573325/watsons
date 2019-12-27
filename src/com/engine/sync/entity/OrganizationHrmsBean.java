@@ -73,8 +73,18 @@ public class OrganizationHrmsBean {
         this.supdepid = supdepid;
     }
 
+    public String getAllSupdepid() {
+        return allSubdepid;
+    }
+
+    public void setAllSupdepid(String allSubdepid) {
+        this.allSubdepid = allSubdepid;
+    }
+
     //上级部门
     private String supdepid;
+    //所有上级部门
+    private String allSubdepid;
 
     public String toString(){
         StringBuffer sb = new StringBuffer();

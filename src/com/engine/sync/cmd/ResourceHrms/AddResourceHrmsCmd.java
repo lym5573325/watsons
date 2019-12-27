@@ -4,21 +4,24 @@ import com.engine.sync.entity.ResourceHrmsBean;
 import com.engine.sync.util.LocationUtils;
 import com.engine.sync.util.ResourceUtils;
 import weaver.conn.RecordSet;
-import weaver.general.BaseBean;
+import weaver.interfaces.lym.util.CalendarMethods;
 
 public class AddResourceHrmsCmd {
 
-    private static final String addSql = "insert into hrmresource (id,workcode,lastname,managerid,departmentid,subcompanyid1,jobtitle,mobile,usekind,companystartdate,status,joblevel)" +
-            "values (?,?,?,?,?,?,?,?,?,?,?,?)";
+    private static final String addSql = "insert into hrmresource (id,workcode,lastname,departmentid,subcompanyid1," +
+            "jobtitle,mobile,usekind,companystartdate,status,joblevel,loginid,lastmoddate,modified,creater,created,seclevel," +
+            "pinyinlastname,ecology_pinyin_search)" +
+            "values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,sysdate,?,sysdate,?,?,?)";
 
 
     //protected boolean execute(String workcode, String lastname, String managerid,String departmentid, String subcompanyid1 ){
     protected boolean execute(ResourceHrmsBean bean){
-        new BaseBean().writeLog("新增人员:"+bean.toString());
+        //new BaseBean().writeLog("新增人员:"+bean.toString());
         RecordSet rs = new RecordSet();
-        if(rs.executeUpdate(addSql,ResourceUtils.getMaxId(), bean.getWorkcode(),bean.getLastname(),bean.getManagerid(),bean.getDepartmentid(),
+        if(rs.executeUpdate(addSql,ResourceUtils.getMaxId(), bean.getWorkcode(),bean.getLastname(),bean.getDepartmentid(),
                 bean.getSubcompanyid1(),bean.getJobtitle(),bean.getPhone(),bean.getUsekind(),bean.getCompanystartdate(),
-                bean.getStatus(), bean.getTempfield6())
+                bean.getStatus(), bean.getTempfield6(), bean.getWorkcode(), CalendarMethods.getCurrentDate(),"1",bean.getSeclevel(),
+                bean.getPinyinlastname(), bean.getPinyinlastname())
         ) cusData(bean);
         return false;
     }
@@ -45,9 +48,9 @@ public class AddResourceHrmsCmd {
      * @return
      */
     protected boolean cusData(ResourceHrmsBean bean){
-        new BaseBean().writeLog("新增人员自定义字段表");
+        //new BaseBean().writeLog("新增人员自定义字段表");
         RecordSet rs = new RecordSet();
-        rs.executeUpdate(sql2, ResourceUtils.getUidByWorkcode(bean.getWorkcode()), "1","HrmCustomFieldByInfoType",
+        rs.executeUpdate(sql2, ResourceUtils.getUidByWorkcode(bean.getWorkcode()), "3","HrmCustomFieldByInfoType",
                 bean.getTempfield2(), bean.getTempfield3(), bean.getTempfield4(), bean.getTempfield7(),bean.getTempfield9(), bean.getTempfield11(),
                 bean.getTempfield14(), bean.getTempfield15(), bean.getTempfield16(), bean.getTempfield5(), LocationUtils.getLocationIdByCode(bean.getTempfield13()));
         return true;

@@ -24,9 +24,11 @@ public class LocationHrmsServiceImpl implements LocationHrmsService {
             try{
                 reader = new BufferedReader(new InputStreamReader(new FileInputStream(file),"UTF-8"));
                 while((tempString = reader.readLine()) != null){
-                    LocationHrmsBean bean = new ReadLocationHrmsCmd(tempString).getBean();
-                    new BaseBean().writeLog("第" + line + "行："+ bean.toString());
-                    handle.handle(bean);
+                    if(line>2) {
+                        LocationHrmsBean bean = new ReadLocationHrmsCmd(tempString).getBean();
+                        new BaseBean().writeLog("第" + line + "行：" + bean.toString());
+                        handle.handle(bean);
+                    }
                     line++;
                 }
             }catch (Exception e){

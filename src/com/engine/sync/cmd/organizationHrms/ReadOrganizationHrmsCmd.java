@@ -2,6 +2,7 @@ package com.engine.sync.cmd.organizationHrms;
 
 import com.engine.sync.entity.OrganizationHrmsBean;
 import com.engine.sync.util.OrgUtil;
+import weaver.hrm.company.DepartmentComInfo;
 
 public class ReadOrganizationHrmsCmd {
     private String orgInfo = "";
@@ -44,7 +45,15 @@ public class ReadOrganizationHrmsCmd {
             }
 
             //根据hrms_orgId获取上级部门
-            bean.setSupdepid(getSupdepidByHrmsOrgID(bean.getHrms_OrgId()));
+            String supdepid = getSupdepidByHrmsOrgID(bean.getHrms_OrgId());
+            bean.setSupdepid(supdepid);
+            //部门名称转换  将"&"转成"/"
+            bean.setDeptName(bean.getDeptName().replaceAll("&","/"));
+            //获取所有上级部门
+            try {
+                String allSupdepid = DepartmentComInfo.getAllParentDepartId(supdepid, supdepid);
+                if(allSupdepid.length()>0) bean.setAllSupdepid(","+allSupdepid+",");
+            }catch (Exception e){}
         }
         return bean;
     }

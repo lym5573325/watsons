@@ -2,56 +2,79 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba18f7b8-95b5-4ee2-a920-27177b2d87b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/watsons/test/lymtest.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/watsons/test/syncLocation/syncLocation.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/watsons/test/syncLocation/syncOrg.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/watsons/test/syncLocation/syncPosition.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/watsons/test/syncLocation/syncResource.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/人事流程/主动离职.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/人事流程/合同续签审批.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/人事流程/被动离职(审批节点).js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/人事流程/被动离职.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp6/Operation.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp6/main.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/api/epdocking/EpSystemActionApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/api/login/util/LoginUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/engine/epdocking/cmd/epSystem/GetSystemList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/engine/epdocking/entity/EpSystemBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/engine/epdocking/entity/SystemBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/engine/epdocking/service/EpSystemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/engine/epdocking/service/impl/EpSystemServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/engine/epdocking/util/LoginCheckUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/engine/epdocking/util/SystemListUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/engine/epdocking/util/TokenInfoUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/engine/epdocking/web/EpSystemAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms2/HandleResourceHrms2Cmd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms2/ReadResourceHrms2Cmd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms2/UpdateResourceHrms2Cmd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/engine/sync/entity/ResourceHrms2Bean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/engine/sync/service/ResourceHrms2Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/engine/sync/service/impl/ResourceHrms2ServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/formmode/customjavacode/browser/DepartmentBrowser1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/formmode/customjavacode/browser/HrmresourceBrowser1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/interfaces/lym/hr/UndefinedNameAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/interfaces/lym/util/HttpServiceUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/interfaces/lym/util/WorkflowToolMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/prop/epcheck.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/prop/epinfo.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/watsons/jsp/getL5Dept.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/watsons/test/epdocking/GetTokenInfo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/watsons/test/epdocking/LoginCheck.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/watsons/test/epdocking/getLoginSession.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/watsons/test/handledata/deleteCus.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/watsons/test/handledata/resetAllsupdep.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/watsons/test/syncLocation/syncManager.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/watsons/test/syncLocation/syncPositionChina.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/watsons/test/syncLocation/syncResource2.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Watsons_new.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Watsons_new.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classbean/META-INF/Watsons_new.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/ResourceHrms/AddResourceHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/ResourceHrms/AddResourceHrmsCmd.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/ResourceHrms/HandleResourceHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/ResourceHrms/HandleResourceHrmsCmd.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/ResourceHrms/ReadResourceHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/ResourceHrms/ReadResourceHrmsCmd.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/ResourceHrms/UpdateResourceHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/ResourceHrms/UpdateResourceHrmsCmd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/locationHrms/AddLocationHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/locationHrms/AddLocationHrmsCmd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/locationHrms/HandleLocationHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/locationHrms/HandleLocationHrmsCmd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/locationHrms/UpdateLocationHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/locationHrms/UpdateLocationHrmsCmd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/organizationHrms/AddOrganizationHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/organizationHrms/AddOrganizationHrmsCmd.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/organizationHrms/HandleOrganizationHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/organizationHrms/HandleOrganizationHrmsCmd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/positionHrms/AddPositionHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/positionHrms/AddPositionHrmsCmd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/positionHrms/HandlePositionHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/positionHrms/HandlePositionHrmsCmd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/positionHrms/ReadPositionHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/positionHrms/ReadPositionHrmsCmd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/positionHrms/UpdatePositionHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/positionHrms/UpdatePositionHrmsCmd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/entity/LocationHrmsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/entity/LocationHrmsBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/organizationHrms/ReadOrganizationHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/organizationHrms/ReadOrganizationHrmsCmd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/organizationHrms/UpdateOrganizationHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/organizationHrms/UpdateOrganizationHrmsCmd.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/entity/OrganizationHrmsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/entity/OrganizationHrmsBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/entity/PositionHrmsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/entity/PositionHrmsBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/entity/ResourceHrmsBean$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/entity/ResourceHrmsBean$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/entity/ResourceHrmsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/entity/ResourceHrmsBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/service/impl/LocationHrmsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/service/impl/LocationHrmsServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/service/impl/OrganizationHrmsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/service/impl/OrganizationHrmsServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/service/impl/PositionHrmsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/service/impl/PositionHrmsServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/service/impl/ResourceHrmsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/service/impl/ResourceHrmsServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/util/ResourceUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/util/ResourceUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/AddResourceHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/AddResourceHrmsCmd.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/HandleResourceHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/HandleResourceHrmsCmd.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/ReadResourceHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/ReadResourceHrmsCmd.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/UpdateResourceHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/UpdateResourceHrmsCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/locationHrms/AddLocationHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/locationHrms/AddLocationHrmsCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/locationHrms/HandleLocationHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/locationHrms/HandleLocationHrmsCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/locationHrms/UpdateLocationHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/locationHrms/UpdateLocationHrmsCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/positionHrms/AddPositionHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/positionHrms/AddPositionHrmsCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/positionHrms/HandlePositionHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/positionHrms/HandlePositionHrmsCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/positionHrms/ReadPositionHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/positionHrms/ReadPositionHrmsCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/positionHrms/UpdatePositionHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/positionHrms/UpdatePositionHrmsCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/entity/LocationHrmsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/entity/LocationHrmsBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/AddOrganizationHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/AddOrganizationHrmsCmd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/HandleOrganizationHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/HandleOrganizationHrmsCmd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/ReadOrganizationHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/ReadOrganizationHrmsCmd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/UpdateOrganizationHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/UpdateOrganizationHrmsCmd.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engine/sync/entity/OrganizationHrmsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/entity/OrganizationHrmsBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/entity/PositionHrmsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/entity/PositionHrmsBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engine/sync/entity/ResourceHrmsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/entity/ResourceHrmsBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engine/sync/service/impl/LocationHrmsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/service/impl/LocationHrmsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engine/sync/service/impl/OrganizationHrmsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/service/impl/OrganizationHrmsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engine/sync/service/impl/PositionHrmsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/service/impl/PositionHrmsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/service/impl/ResourceHrmsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/service/impl/ResourceHrmsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engine/sync/util/ResourceUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/util/ResourceUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/watsons/test/lymtest.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/watsons/test/lymtest.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,42 +89,94 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/engine/sync/entity/ResourceHrmsBean.java">
+        <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/impl/ResourceHrms2ServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3243">
-              <caret line="238" column="45" selection-start-line="238" selection-start-column="45" selection-end-line="238" selection-end-column="45" />
+            <state relative-caret-position="173">
+              <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="39" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#150#151#0" expanded="true" />
-                <element signature="e#181#182#0" expanded="true" />
-                <element signature="e#229#230#0" expanded="true" />
-                <element signature="e#269#270#0" expanded="true" />
-                <element signature="e#678#679#0" expanded="true" />
-                <element signature="e#713#714#0" expanded="true" />
-                <element signature="e#1848#1849#0" expanded="true" />
-                <element signature="e#1881#1882#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/watsons/test/syncLocation/syncPosition.jsp">
+        <entry file="file://$PROJECT_DIR$/src/com/engine/sync/entity/ResourceHrms2Bean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="70" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
+            <state relative-caret-position="380">
+              <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+              <folding>
+                <element signature="e#99#100#0" expanded="true" />
+                <element signature="e#130#131#0" expanded="true" />
+                <element signature="e#178#179#0" expanded="true" />
+                <element signature="e#218#219#0" expanded="true" />
+                <element signature="e#259#260#0" expanded="true" />
+                <element signature="e#296#297#0" expanded="true" />
+                <element signature="e#356#357#0" expanded="true" />
+                <element signature="e#408#409#0" expanded="true" />
+                <element signature="e#438#439#0" expanded="true" />
+                <element signature="e#464#465#0" expanded="true" />
+                <element signature="e#502#503#0" expanded="true" />
+                <element signature="e#532#533#0" expanded="true" />
+                <element signature="e#564#565#0" expanded="true" />
+                <element signature="e#592#593#0" expanded="true" />
+                <element signature="e#634#635#0" expanded="true" />
+                <element signature="e#668#669#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/impl/ResourceHrmsServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/web/watsons/test/syncLocation/syncResource2.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="380">
+              <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/人事流程/主动离职.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="817">
+              <caret line="286" column="3" selection-start-line="286" selection-start-column="3" selection-end-line="286" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/人事流程/被动离职.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="817">
+              <caret line="123" selection-start-line="123" selection-end-line="123" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/人事流程/被动离职(审批节点).js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="817">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/人事流程/合同续签审批.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="817">
+              <caret line="137" column="2" selection-start-line="137" selection-start-column="2" selection-end-line="137" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/watsons/test/syncLocation/syncManager.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="97" />
             </state>
           </provider>
         </entry>
@@ -109,77 +184,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/watsons/test/syncLocation/syncResource.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="72" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/ReadResourceHrmsCmd.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="155" column="99" lean-forward="true" selection-start-line="155" selection-start-column="99" selection-end-line="155" selection-end-column="99" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="138">
+              <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/HandleResourceHrmsCmd.java">
+        <entry file="file://$PROJECT_DIR$/src/com/engine/sync/entity/ResourceHrmsBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/AddResourceHrmsCmd.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/ResourceHrmsService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/engine/sync/util/ResourceUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/UpdateResourceHrmsCmd.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-5980">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -191,6 +206,7 @@
       <list>
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -204,6 +220,20 @@
       <find>离职日期</find>
       <find>use</find>
       <find>setJob</find>
+      <find>getAllSupDepartment</find>
+      <find>getAllParentDepartId</find>
+      <find>HttpManager</find>
+      <find>postDataS</find>
+      <find>managerid</find>
+      <find>endTime</find>
+      <find>dateTimeFormat2</find>
+      <find>send</find>
+      <find>isValid</find>
+      <find>loginid is null</find>
+      <find>checkUserPass==&gt;</find>
+      <find>checkUserPass</find>
+      <find>beforeCheckUser</find>
+      <find>185</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -212,55 +242,63 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/engine/sync/service/ResourceHrmsService.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/service/LocationHrmsBean.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/service/DepartmentHrmsService.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/service/OrganizationHrmsService.java" />
+        <option value="$PROJECT_DIR$/src/weaver/formmode/customjavacode/browser/HrmresourceBrowser1.java" />
+        <option value="$PROJECT_DIR$/src/weaver/token/LoginUtils.java" />
+        <option value="$PROJECT_DIR$/src/weaver/token/GetTokenInfo.java" />
+        <option value="$PROJECT_DIR$/src/weaver/token/GetSystemList.java" />
+        <option value="$PROJECT_DIR$/src/weaver/token/entity/SystemBean.java" />
+        <option value="$PROJECT_DIR$/src/weaver/token/TokenInfo.java" />
+        <option value="$PROJECT_DIR$/src/weaver/token/SystemList.java" />
+        <option value="$PROJECT_DIR$/src/weaver/token/LoginCheck.java" />
+        <option value="$PROJECT_DIR$/src/weaver/docking/TokenInfo.java" />
+        <option value="$PROJECT_DIR$/src/weaver/docking/SystemList.java" />
+        <option value="$PROJECT_DIR$/src/com/engine/epdocking/service/SystemService.java" />
+        <option value="$PROJECT_DIR$/src/com/engine/epdocking/cmd/systemList/getSystemList.java" />
+        <option value="$PROJECT_DIR$/src/com/engine/epdocking/service/EpSystemService.java" />
+        <option value="$PROJECT_DIR$/src/com/engine/epdocking/service/impl/EpSystemServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/engine/epdocking/web/SystemListAction.java" />
+        <option value="$PROJECT_DIR$/src/com/engine/epdocking/web/EpSystemListAction.java" />
+        <option value="$PROJECT_DIR$/src/com/engine/docking/SystemList.java" />
+        <option value="$PROJECT_DIR$/src/com/engine/docking/TokenInfo.java" />
+        <option value="$PROJECT_DIR$/src/com/engine/epdocking/entity/SystemBean.java" />
+        <option value="$PROJECT_DIR$/src/com/engine/epdocking/util/LoginCheck.java" />
+        <option value="$PROJECT_DIR$/src/com/engine/epdocking/util/SystemListUtil.java" />
         <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/AddOrganizationHrmsCmd.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/HandleOrganizationHrmsCmd.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/UpdateOrganizationHrmsCmd.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/util/OrgUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/util/OrgUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/locationHrms/ReadLocationHrmsCmd.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/util/LocationUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/service/LocationHrmsService.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/service/PositionHrmsService.java" />
         <option value="$PROJECT_DIR$/src/weaver/interfaces/lym/util/CalendarMethods.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/ReadOrganizationHrmsCmd.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/util/PositionUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/entity/LocationHrmsBean.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/locationHrms/HandleLocationHrmsCmd.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/locationHrms/UpdateLocationHrmsCmd.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/locationHrms/AddLocationHrmsCmd.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/service/impl/LocationHrmsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/service/impl/OrganizationHrmsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/web/watsons/test/syncLocation/syncOrg.jsp" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/entity/OrganizationHrmsBean.java" />
-        <option value="$PROJECT_DIR$/web/watsons/test/lymtest.jsp" />
-        <option value="$PROJECT_DIR$/web/watsons/test/syncLocation/syncLocation.jsp" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/service/impl/PositionHrmsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/entity/PositionHrmsBean.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/positionHrms/AddPositionHrmsCmd.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/positionHrms/UpdatePositionHrmsCmd.java" />
-        <option value="$PROJECT_DIR$/web/watsons/test/syncLocation/syncPosition.jsp" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/positionHrms/ReadPositionHrmsCmd.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/positionHrms/HandlePositionHrmsCmd.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/service/impl/ResourceHrmsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/entity/ResourceHrmsBean.java" />
-        <option value="$PROJECT_DIR$/web/watsons/test/syncLocation/syncResource.jsp" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/HandleResourceHrmsCmd.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/util/ResourceUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/UpdateResourceHrmsCmd.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/AddResourceHrmsCmd.java" />
+        <option value="$PROJECT_DIR$/web/watsons/test/epdocking/GetTokenInfo.jsp" />
+        <option value="$PROJECT_DIR$/src/com/engine/epdocking/util/TokenInfoUtil.java" />
+        <option value="$PROJECT_DIR$/web/watsons/test/syncLocation/syncManager.jsp" />
+        <option value="$PROJECT_DIR$/src/com/api/epdocking/EpSystemActionApi.java" />
+        <option value="$PROJECT_DIR$/src/weaver/interfaces/lym/util/HttpServiceUtil.java" />
+        <option value="$PROJECT_DIR$/web/watsons/test/epdocking/LoginCheck.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/prop/eplogin.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/prop/eplogincheck.properties" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/prop/epinfo.properties" />
+        <option value="$PROJECT_DIR$/src/com/engine/epdocking/util/LoginCheckUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/api/login/util/LoginUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/engine/epdocking/web/EpSystemAction.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/prop/epcheck.properties" />
+        <option value="$PROJECT_DIR$/src/com/engine/epdocking/cmd/epSystem/GetSystemList.java" />
+        <option value="$PROJECT_DIR$/src/test.java" />
         <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/ReadResourceHrmsCmd.java" />
+        <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms2/HandleResourceHrms2Cmd.java" />
+        <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms2/UpdateResourceHrms2Cmd.java" />
+        <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms2/ReadResourceHrms2Cmd.java" />
+        <option value="$PROJECT_DIR$/src/com/engine/sync/service/ResourceHrms2Service.java" />
+        <option value="$PROJECT_DIR$/src/com/engine/sync/service/impl/ResourceHrms2ServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/engine/sync/util/ResourceUtils.java" />
+        <option value="$PROJECT_DIR$/src/com/engine/sync/entity/ResourceHrms2Bean.java" />
+        <option value="$PROJECT_DIR$/web/watsons/test/syncLocation/syncResource2.jsp" />
+        <option value="$PROJECT_DIR$/js/人事流程/主动离职.js" />
+        <option value="$PROJECT_DIR$/js/人事流程/被动离职.js" />
+        <option value="$PROJECT_DIR$/js/人事流程/被动离职(审批节点).js" />
+        <option value="$PROJECT_DIR$/js/人事流程/合同续签审批.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-7" />
-    <option name="y" value="2" />
-    <option name="width" value="1934" />
-    <option name="height" value="1037" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="width" value="1920" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -268,6 +306,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -278,56 +317,18 @@
             <path>
               <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
               <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
               <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="sync" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="sync" type="462c0819:PsiDirectoryNode" />
-              <item name="cmd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="sync" type="462c0819:PsiDirectoryNode" />
-              <item name="cmd" type="462c0819:PsiDirectoryNode" />
-              <item name="ResourceHrms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="sync" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="人事流程" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -335,9 +336,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/plugin/element/iconblock/temp6" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -345,10 +347,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.engine.epdocking.entity" />
       <recent name="weaver.interfaces.lym.util" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Idea_workspace\Watsons_new" />
+      <recent name="D:\Idea_workspace\Watsons_new\plugin\element\iconblock\temp6" />
+      <recent name="D:\Idea_workspace\Watsons_new\web\watsons\test\epdocking" />
+      <recent name="D:\Idea_workspace\Watsons_new\web\WEB-INF\prop" />
+      <recent name="D:\Idea_workspace\Watsons_new\src\com\api\login\util" />
+      <recent name="D:\Idea_workspace\Watsons_new\src\com\engine\epdocking\util" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -363,13 +370,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ResourceHrmsServiceImpl">
-    <configuration name="LocationHrmsBean" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.engine.sync.entity.LocationHrmsBean" />
+  <component name="RunManager" selected="Application.test">
+    <configuration name="LoginCheck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="weaver.token.LoginCheck" />
       <module name="Watsons_new" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.engine.sync.entity.*" />
+          <option name="PATTERN" value="weaver.token.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -377,12 +384,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrganizationHrmsServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.engine.sync.service.impl.OrganizationHrmsServiceImpl" />
+    <configuration name="ReadOrganizationHrmsCmd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.engine.sync.cmd.organizationHrms.ReadOrganizationHrmsCmd" />
       <module name="Watsons_new" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.engine.sync.service.impl.*" />
+          <option name="PATTERN" value="com.engine.sync.cmd.organizationHrms.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -390,12 +397,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadPositionHrmsCmd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.engine.sync.cmd.positionHrms.ReadPositionHrmsCmd" />
+    <configuration name="ReadResourceHrmsCmd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.engine.sync.cmd.ResourceHrms.ReadResourceHrmsCmd" />
       <module name="Watsons_new" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.engine.sync.cmd.positionHrms.*" />
+          <option name="PATTERN" value="com.engine.sync.cmd.ResourceHrms.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -416,11 +423,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TokenInfo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="weaver.token.TokenInfo" />
+      <module name="Watsons_new" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="weaver.token.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="Watsons_new" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ReadPositionHrmsCmd" />
-        <item itemvalue="Application.LocationHrmsBean" />
-        <item itemvalue="Application.OrganizationHrmsServiceImpl" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="Application.LoginCheck" />
+        <item itemvalue="Application.ReadResourceHrmsCmd" />
+        <item itemvalue="Application.ReadOrganizationHrmsCmd" />
       </list>
     </recent_temporary>
   </component>
@@ -441,12 +469,27 @@
       <workItem from="1575439359680" duration="13845000" />
       <workItem from="1575794843954" duration="7207000" />
       <workItem from="1575807666217" duration="1800000" />
-      <workItem from="1575809798083" duration="909000" />
+      <workItem from="1575809798083" duration="4221000" />
+      <workItem from="1576031576895" duration="599000" />
+      <workItem from="1576046259247" duration="599000" />
+      <workItem from="1576047441280" duration="2849000" />
+      <workItem from="1576069817266" duration="615000" />
+      <workItem from="1576070987057" duration="9620000" />
+      <workItem from="1576152496254" duration="282000" />
+      <workItem from="1576153047506" duration="1510000" />
+      <workItem from="1576156765264" duration="234000" />
+      <workItem from="1576157022327" duration="1235000" />
+      <workItem from="1576206586860" duration="31391000" />
+      <workItem from="1576598452556" duration="11787000" />
+      <workItem from="1576758166186" duration="686000" />
+      <workItem from="1576771586413" duration="37657000" />
+      <workItem from="1577068466894" duration="58185000" />
+      <workItem from="1577282262861" duration="7628000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118397000" />
+    <option name="totallyTimeSpent" value="286586000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -458,10 +501,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17430703" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20537634" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -470,16 +513,53 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286334" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3274918" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.22993493" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.22672509" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32827735" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.12472885" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.42278203" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.329718" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.329718" />
+      <window_info anchor="bottom" id="Spring" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="JSF" order="6" weight="0.32977587" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="CDI" order="10" weight="0.32995737" />
+      <window_info anchor="right" id="Bean Validation" order="11" weight="0.32995737" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2032258" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32779622" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.22923589" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32827735" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.42303434" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.329718" />
@@ -489,330 +569,234 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="JSF" order="6" />
+      <window_info anchor="right" id="JSF" order="6" weight="0.32977587" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="CDI" order="10" weight="0.32995737" />
       <window_info anchor="right" id="Bean Validation" order="11" weight="0.32995737" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../ecology9/ecology/classbean/weaver/hrm/company/DepartmentComInfo.class">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/prop/eplogin.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/prop/eplogincheck.properties" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/prop/ep.properties" />
+    <entry file="file://$PROJECT_DIR$/src/weaver/formmode/customjavacode/browser/DepartmentBrowser1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="119" column="35" selection-start-line="119" selection-start-column="18" selection-end-line="119" selection-end-column="35" />
+        <state relative-caret-position="207">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/epdocking/entity/EpSystemBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/epdocking/entity/SystemBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/epdocking/util/TokenInfoUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
           <folding>
-            <element signature="e#3428#3429#0" expanded="true" />
-            <element signature="e#3491#3492#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/prop/epinfo.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/prop/epcheck.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/hr/UndefinedNameAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="45" column="96" selection-start-line="45" selection-start-column="96" selection-end-line="45" selection-end-column="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/util/HttpServiceUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="200" column="26" selection-start-line="200" selection-start-column="26" selection-end-line="200" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/util/CalendarMethods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
-          <folding>
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#850#851#0" expanded="true" />
-            <element signature="e#893#894#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="115">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/PositionHrmsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/AddOrganizationHrmsCmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/UpdateOrganizationHrmsCmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/util/PositionUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/util/OrgUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/util/LocationUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/LocationHrmsService.java">
+    <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/util/WorkflowToolMethods.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/OrganizationHrmsService.java">
+    <entry file="file://$PROJECT_DIR$/web/watsons/test/epdocking/LoginCheck.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="161">
+          <caret line="7" column="80" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="80" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/locationHrms/UpdateLocationHrmsCmd.java">
+    <entry file="file://$PROJECT_DIR$/src/com/api/epdocking/EpSystemActionApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="161">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/ReadOrganizationHrmsCmd.java">
+    <entry file="file://$PROJECT_DIR$/src/com/api/login/util/LoginUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="56" column="7" lean-forward="true" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
-          <folding>
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="841">
+          <caret line="1442" column="1" selection-start-line="1442" selection-start-column="1" selection-end-line="1442" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/watsons/test/lymtest.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/engine/epdocking/service/EpSystemService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="25" column="2" lean-forward="true" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+        <state relative-caret-position="92">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/entity/LocationHrmsBean.java">
+    <entry file="file://$PROJECT_DIR$/src/com/engine/epdocking/util/LoginCheckUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="758">
-          <caret line="100" column="45" selection-start-line="100" selection-start-column="45" selection-end-line="100" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/entity/OrganizationHrmsBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/positionHrms/UpdatePositionHrmsCmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        <state relative-caret-position="92">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/watsons/test/syncLocation/syncLocation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="12" lean-forward="true" selection-end-line="34" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/locationHrms/HandleLocationHrmsCmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/HandleOrganizationHrmsCmd.java">
+    <entry file="file://$PROJECT_DIR$/src/com/engine/epdocking/util/SystemListUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="50" />
+          <caret line="15" column="2" selection-end-line="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/positionHrms/HandlePositionHrmsCmd.java">
+    <entry file="file://$PROJECT_DIR$/plugin/element/iconblock/temp6/main.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/watsons/jsp/getL5Dept.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/watsons/test/epdocking/GetTokenInfo.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="322">
+          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/positionHrms/AddPositionHrmsCmd.java">
+    <entry file="file://$PROJECT_DIR$/src/com/engine/epdocking/web/EpSystemAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="159">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/locationHrms/AddLocationHrmsCmd.java">
+    <entry file="file://$PROJECT_DIR$/src/com/engine/epdocking/service/impl/EpSystemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/element/iconblock/temp6/Operation.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/epdocking/cmd/epSystem/GetSystemList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/watsons/test/epdocking/getLoginSession.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
-          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_221/src.zip!/java/io/FileInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="194" selection-start-line="194" selection-end-line="194" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/locationHrms/ReadLocationHrmsCmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/positionHrms/ReadPositionHrmsCmd.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="288">
+          <caret line="41" column="13" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="41" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/watsons/test/syncLocation/syncOrg.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/AddResourceHrmsCmd.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="29" lean-forward="true" selection-end-line="35" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/impl/OrganizationHrmsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="47" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/impl/LocationHrmsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/impl/PositionHrmsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/entity/PositionHrmsBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/entity/ResourceHrmsBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3243">
-          <caret line="238" column="45" selection-start-line="238" selection-start-column="45" selection-end-line="238" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#150#151#0" expanded="true" />
-            <element signature="e#181#182#0" expanded="true" />
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
-            <element signature="e#1848#1849#0" expanded="true" />
-            <element signature="e#1881#1882#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/watsons/test/syncLocation/syncPosition.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="70" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/impl/ResourceHrmsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/watsons/test/syncLocation/syncResource.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="72" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
+        <state relative-caret-position="92">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/HandleResourceHrmsCmd.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+        <state relative-caret-position="253">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/ReadResourceHrmsCmd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2020">
+          <caret line="32" column="38" lean-forward="true" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -821,48 +805,162 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/ResourceHrmsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/util/ResourceUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="92">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/UpdateResourceHrmsCmd.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+        <state relative-caret-position="92">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/impl/LocationHrmsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="44" column="9" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="44" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/impl/ResourceHrmsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-322">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms2/HandleResourceHrms2Cmd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/util/ResourceUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/ResourceHrms2Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms2/UpdateResourceHrms2Cmd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/AddResourceHrmsCmd.java">
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms2/ReadResourceHrms2Cmd.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+        <state relative-caret-position="610">
+          <caret line="44" column="56" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#393#394#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/entity/ResourceHrmsBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5980">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/entity/ResourceHrms2Bean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+          <folding>
+            <element signature="e#99#100#0" expanded="true" />
+            <element signature="e#130#131#0" expanded="true" />
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#668#669#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/impl/ResourceHrms2ServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="39" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/ReadResourceHrmsCmd.java">
+    <entry file="file://$PROJECT_DIR$/web/watsons/test/syncLocation/syncResource.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="155" column="99" lean-forward="true" selection-start-line="155" selection-start-column="99" selection-end-line="155" selection-end-column="99" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="138">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/watsons/test/syncLocation/syncManager.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/watsons/test/syncLocation/syncResource2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/人事流程/主动离职.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="286" column="3" selection-start-line="286" selection-start-column="3" selection-end-line="286" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/人事流程/被动离职.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="123" selection-start-line="123" selection-end-line="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/人事流程/被动离职(审批节点).js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/人事流程/合同续签审批.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="137" column="2" selection-start-line="137" selection-start-column="2" selection-end-line="137" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -883,7 +981,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Web (Watsons_new)|Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -895,6 +993,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>lib</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -906,6 +1005,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -917,7 +1017,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web|Watsons_new</last-edited>
+          <last-edited>Watsons_new</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -20,4 +20,22 @@ public class ResourceUtils {
         if(rs.next())   var = Util.getIntValue(rs.getString("maxid"),0);
         return var+1;
     }
+
+
+    public static int getUseKind(String param1){
+        RecordSet rs = new RecordSet();
+        int result=0;
+        rs.execute("select id from hrmusekind where description = '"+param1+"'");
+        if(rs.next())   result = Util.getIntValue(rs.getString("id"));
+        return result;
+    }
+
+    public static String transSex(String sex){
+        if(sex.toLowerCase().equals("female")){//女
+            sex = "1";
+        }else{//男
+            sex = "0";
+        }
+        return sex;
+    }
 }

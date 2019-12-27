@@ -4,8 +4,8 @@ import weaver.conn.RecordSet;
 
 public class AddOrganizationHrmsCmd {
 
-    private static final String addSql = " insert into hrmdepartment (departmentcode,departmentmark,departmentname,supdepid,subcompanyid1,tlevel,creater,created,modifier,modified) " +
-            " values (?,?,?,?,?,?,?,?,?,?)";
+    private static final String addSql = " insert into hrmdepartment (departmentcode,departmentmark,departmentname,supdepid,subcompanyid1,tlevel,creater,created,modifier,modified,allsupdepid) " +
+            " values (?,?,?,?,?,?,?,sysdate,?,sysdate,?)";
 
     /**
      * 新增部门
@@ -20,9 +20,11 @@ public class AddOrganizationHrmsCmd {
      * @param modified  最后修改时间
      * @return
      */
-    public boolean addOrg(String departmentcode,String departmentmark,String departmentname,String supdepid,int subcompanyid1,int tlevel,int creater,String created,int modifier,String modified){
-        return  new RecordSet().executeUpdate(addSql,departmentcode,departmentmark,departmentname,supdepid,subcompanyid1+"",tlevel+"",creater+"",created,modifier+"",modified);
+    public boolean addOrg(String departmentcode,String departmentmark,String departmentname,String supdepid,int subcompanyid1,int tlevel,int creater,String created,int modifier,String modified,String allSupdepid){
+        return  new RecordSet().executeUpdate(addSql,departmentcode,departmentmark,departmentname,supdepid,subcompanyid1+"",tlevel+"",creater+"",modifier+"", allSupdepid);
     }
+
+
 
 
 }

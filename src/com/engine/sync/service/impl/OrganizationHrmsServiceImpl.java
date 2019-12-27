@@ -24,14 +24,16 @@ public class OrganizationHrmsServiceImpl implements OrganizationHrmsService {
             try{
                 //reader = new BufferedReader(new InputStreamReader(new FileInputStream(file),"UTF-8"));
                 reader = new BufferedReader(new InputStreamReader(new FileInputStream(file),"UTF-8"));
-                while((tempString = reader.readLine()) != null){
-                    OrganizationHrmsBean bean = new ReadOrganizationHrmsCmd(tempString).getBean();
-                    //System.out.println("第" + line + "行长度:" + tempString.getBytes("gbk").length);
-                    //System.out.println("第" + line + "行长度:" + tempString.getBytes("gbk").length);
-                    //System.out.println("Organization：{" + bean.toString() + "}");
-                    new BaseBean().writeLog("第" + line + "行长度:" + tempString.getBytes("UTF-8").length);
-                    new BaseBean().writeLog("Organization：{" + bean.toString() + "}");
-                    cmd.handle(bean);
+                while((tempString = reader.readLine()) != null ){
+                    if(line>2) {
+                        OrganizationHrmsBean bean = new ReadOrganizationHrmsCmd(tempString).getBean();
+                        //System.out.println("第" + line + "行长度:" + tempString.getBytes("gbk").length);
+                        //System.out.println("第" + line + "行长度:" + tempString.getBytes("gbk").length);
+                        //System.out.println("Organization：{" + bean.toString() + "}");
+                        new BaseBean().writeLog("第" + line + "行长度:" + tempString.getBytes("UTF-8").length);
+                        new BaseBean().writeLog("Organization：{" + bean.toString() + "}");
+                        cmd.handle(bean);
+                    }
                     line++;
                 }
             }catch (Exception e){

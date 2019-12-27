@@ -24,9 +24,11 @@ public class PositionHrmsServiceImpl {
                 //reader = new BufferedReader(new InputStreamReader(new FileInputStream(file),"UTF-8"));
                 reader = new BufferedReader(new InputStreamReader(new FileInputStream(file),"UTF-8"));
                 while((tempString = reader.readLine()) != null){
-                    PositionHrmsBean bean = new ReadPositionHrmsCmd(tempString).getBean();
-                    new BaseBean().writeLog("第" + line + "行:" + bean.toString());
-                    cmd.handle(bean);
+                    if(line>2) {
+                        PositionHrmsBean bean = new ReadPositionHrmsCmd(tempString).getBean();
+                        new BaseBean().writeLog("第" + line + "行:" + bean.toString());
+                        cmd.handle(bean);
+                    }
                     line++;
                 }
             }catch (Exception e){

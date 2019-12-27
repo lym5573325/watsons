@@ -21,8 +21,17 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="classbean" level="application" />
+    <orderEntry type="library" name="classbean1" level="application" />
     <orderEntry type="library" name="lib" level="application" />
     <orderEntry type="library" name="lib1" level="application" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Desktop/工作/泛微资料/Jar/屈臣氏EP解密库/Edge.DES.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

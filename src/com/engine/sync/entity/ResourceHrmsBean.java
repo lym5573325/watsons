@@ -297,8 +297,12 @@ public class ResourceHrmsBean {
     private String subcompanyid1 ;
     //职位ID
     private String jobtitle;
+    //安全级别
+    private String seclevel;
     //状态
     private String status;
+    //拼音
+    private String pinyinlastname;
 
     public String getManagerid() {
         return managerid;
@@ -332,6 +336,10 @@ public class ResourceHrmsBean {
         this.jobtitle = jobtitle;
     }
 
+    public String getSeclevel() {   return seclevel; }
+
+    public void setSeclevel(String seclevel) { this.seclevel = seclevel; }
+
     public String getStatus() {
         return status;
     }
@@ -339,6 +347,10 @@ public class ResourceHrmsBean {
     public void setStatus(String status) {
         this.status = status;
     }
+
+    public String getPinyinlastname() { return pinyinlastname; }
+
+    public void setPinyinlastname(String pinyinlastname) { this.pinyinlastname = pinyinlastname; }
 
     private static List<Integer> lengthList = new ArrayList<Integer>(){{
         add(workcodeLength);
