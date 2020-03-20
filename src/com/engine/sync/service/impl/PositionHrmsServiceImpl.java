@@ -1,12 +1,15 @@
 package com.engine.sync.service.impl;
 
+import com.engine.common.service.impl.HrmCommonServiceImpl;
 import com.engine.sync.cmd.organizationHrms.HandleOrganizationHrmsCmd;
 import com.engine.sync.cmd.organizationHrms.ReadOrganizationHrmsCmd;
 import com.engine.sync.cmd.positionHrms.HandlePositionHrmsCmd;
 import com.engine.sync.cmd.positionHrms.ReadPositionHrmsCmd;
 import com.engine.sync.entity.OrganizationHrmsBean;
 import com.engine.sync.entity.PositionHrmsBean;
+import weaver.conn.RecordSet;
 import weaver.general.BaseBean;
+import weaver.general.Util;
 import weaver.hrm.job.JobTitlesComInfo;
 
 import java.io.*;
@@ -30,6 +33,16 @@ public class PositionHrmsServiceImpl {
                         cmd.handle(bean);
                     }
                     line++;
+                }
+
+                //更新拼音
+                HrmCommonServiceImpl hcsi = new HrmCommonServiceImpl();
+                RecordSet rs = new RecordSet();
+                RecordSet rs2 = new RecordSet();
+                rs.execute("select id,jobtitlename from hrmjobtitles order by id desc");
+                while(rs.next()){
+                    String pinyin = hcsi.generateQuickSearchStr(Util.null2String(rs.getString("jobtitlename")).toLowerCase().replaceAll(" ",""));
+                    rs2.executeUpdate("update hrmjobtitles set ecology_pinyin_search=? where id=?", pinyin, Util.null2String(rs.getString("id")));
                 }
             }catch (Exception e){
                 e.printStackTrace();

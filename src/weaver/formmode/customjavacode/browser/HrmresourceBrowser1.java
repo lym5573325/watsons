@@ -41,6 +41,8 @@ public class HrmresourceBrowser1 extends AbstractCustomSqlConditionJavaCode {
                 " where " +
                 " instr(','|| MKTER ||',', ','||"+uid+"||',',1,1)>0 " +
                 " or " +
+                " instr(','|| regioner ||',', ','||"+uid+"||',',1,1)>0 " +
+                " or " +
                 " instr(','|| Recuriter ||',', ','||"+uid+"||',',1,1)>0)";
 
         new BaseBean().writeLog("虚拟人员按钮1==>  uid:"+uid+"    sqlwhere:"+sqlCondition);

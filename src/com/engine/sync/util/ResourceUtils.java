@@ -21,6 +21,11 @@ public class ResourceUtils {
         return var+1;
     }
 
+    public static void setMaxId(int newid){
+        RecordSet rs = new RecordSet();
+        rs.execute("update SequenceIndex  set  currentid="+newid+" where indexdesc='resourceid'");
+    }
+
 
     public static int getUseKind(String param1){
         RecordSet rs = new RecordSet();

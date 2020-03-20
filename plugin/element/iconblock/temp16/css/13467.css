@@ -1,0 +1,16 @@
+.wea-temp16-box-title-custom {
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 20px;
+}
+
+.wea-temp16-box-title2-custom {
+	line-height: 20px;
+}
+
+.wea-temp16-box-left-custom {
+	width: 50%;
+	height: 100%;
+	padding: 33px 0px 0px 20px;
+}

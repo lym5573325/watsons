@@ -1,0 +1,59 @@
+/* temp16 */
+.wea-temp16-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.wea-temp16-box {
+	display: flex;
+	align-items: center;
+	width: 200px;
+	height: 80px;
+	background-color: #fff;
+	margin-top: 10px;
+	text-decoration: none;
+}
+
+.wea-temp16-box-left {
+	width: 50%;
+	height: 100%;
+	padding: 40px 0px 0px 20px;
+}
+
+.wea-temp16-box-title {
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 15px;
+}
+
+.wea-temp16-box-title2{
+	line-height: 15px;
+}
+
+.wea-temp16-box-text {
+	color: #fff;
+	line-height: 10px;
+}
+
+.wea-temp16-box-right {
+	width: 50%;
+	text-align: center
+}
+
+.wea-temp16-box-icon {
+	width: 40px;
+	height: 40px;
+}
+
+.wea-temp-shodow {
+	border-radius: 2px;
+	box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px
+		rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)
+}
+.wea-temp-shodow:hover {
+    opacity: 0.8;
+}

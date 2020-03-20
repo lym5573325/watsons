@@ -2,79 +2,141 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba18f7b8-95b5-4ee2-a920-27177b2d87b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/人事流程/主动离职.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/人事流程/合同续签审批.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/人事流程/被动离职(审批节点).js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/人事流程/被动离职.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp6/Operation.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp6/main.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/api/epdocking/EpSystemActionApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/api/login/util/LoginUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engine/epdocking/cmd/epSystem/GetSystemList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engine/epdocking/entity/EpSystemBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engine/epdocking/entity/SystemBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engine/epdocking/service/EpSystemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engine/epdocking/service/impl/EpSystemServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engine/epdocking/util/LoginCheckUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engine/epdocking/util/SystemListUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engine/epdocking/util/TokenInfoUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engine/epdocking/web/EpSystemAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms2/HandleResourceHrms2Cmd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms2/ReadResourceHrms2Cmd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms2/UpdateResourceHrms2Cmd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engine/sync/entity/ResourceHrms2Bean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engine/sync/service/ResourceHrms2Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engine/sync/service/impl/ResourceHrms2ServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weaver/formmode/customjavacode/browser/DepartmentBrowser1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weaver/formmode/customjavacode/browser/HrmresourceBrowser1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weaver/interfaces/lym/hr/UndefinedNameAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weaver/interfaces/lym/util/HttpServiceUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weaver/interfaces/lym/util/WorkflowToolMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/prop/epcheck.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/prop/epinfo.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/watsons/jsp/getL5Dept.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/watsons/test/epdocking/GetTokenInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/watsons/test/epdocking/LoginCheck.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/watsons/test/epdocking/getLoginSession.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/watsons/test/handledata/deleteCus.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/watsons/test/handledata/resetAllsupdep.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/watsons/test/syncLocation/syncManager.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/watsons/test/syncLocation/syncPositionChina.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/watsons/test/syncLocation/syncResource2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classbean/META-INF/Watsons_new.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classbean/com/engine/resetPinyin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classbean/com/engine/syncPosition.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classbean/weaver/interfaces/lym/cronjob/BackupHcDataMonthlyCronjob.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classbean/weaver/interfaces/lym/cronjob/UpdateHcRecstatusCronjob.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classbean/weaver/interfaces/lym/edms/util/EdmsHttpUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classbean/weaver/interfaces/lym/edms/util/EdmsHttpUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classbean/weaver/interfaces/lym/formmode/HcBackupMode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classbean/weaver/interfaces/lym/formmode/HcMode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classbean/weaver/interfaces/lym/formmode/HcjcMode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classbean/weaver/interfaces/lym/formmode/YearMode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classbean/weaver/interfaces/lym/formmode/ZjdzbMode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classbean/weaver/interfaces/lym/hr/OfferProsoalAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classbean/weaver/interfaces/lym/hr/OnBoardNoticeAction_EDMS.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classbean/weaver/interfaces/lym/hr/StaffAddApplyAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classbean/weaver/interfaces/lym/hr/StaffAddChangeApplyAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classbean/weaver/interfaces/lym/util/ImageFileUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classbean/weaver/systeminfo/SysMaintenanceLog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecodejs/人事流程/人员增补申请MR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecodejs/人事流程/入职审批(Recuiter_Confirm提醒).js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecodejs/人事流程/入职审批.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecodejs/人事流程/盖章申请.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecodejs/人事流程/离职交接(员工借款节点申请).js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecodejs/人事流程/离职交接(员工报销确认节点提醒).js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecodejs/人事流程/离职交接(财务提醒).js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecodejs/人事流程/被动离职(审批节点).js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecodejs/人事流程/被动离职.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecodejs/人事流程/试用期转正审批(大于15).js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecodejs/人事流程/试用期转正审批(小于等于14).js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecodejs/人事流程/调用审批.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp16/Operation.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp16/css/13467.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp16/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp16/css/base2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp16/main.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp16/main2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp16/mainIE.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp6/Operation.jsp.bak20191225" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp6/OperationCreateWorkflow.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp6/addWorkflow.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp6/createWorkflow.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp6/css/13280.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp6/css/13953.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp6/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp6/images/01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp6/images/02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp6/images/03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp6/images/04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp6/images/05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp6/images/06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp6/main2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp6/main3.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp6/mainSystemList1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp6/mainSystemList2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp6/mainTodoWorkflow.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/formmode/customjavacode/modeexpand/CreateInternalApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/interfaces/lym/cronjob/BackupHcDataMonthlyCronjob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/interfaces/lym/cronjob/CreateContracrRenewalCronjob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/interfaces/lym/cronjob/CreateProbationConfirmationCronjob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/interfaces/lym/cronjob/UpdateHcRecstatusCronjob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/interfaces/lym/edms/util/EdmsHttpUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/interfaces/lym/edms/util/EdmsHttpUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/interfaces/lym/formmode/HcBackupMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/interfaces/lym/formmode/HcMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/interfaces/lym/formmode/HcjcMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/interfaces/lym/formmode/YearMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/interfaces/lym/formmode/ZjdzbMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/interfaces/lym/hr/OfferProsoalAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/interfaces/lym/hr/OnBoardNoticeAction_EDMS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/interfaces/lym/hr/StaffAddApplyAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/interfaces/lym/hr/StaffAddChangeApplyAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/interfaces/lym/hr/TranferApproveAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/interfaces/lym/operatoraction/getAllManagerEndWithFunctionHEAD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/interfaces/lym/util/ImageFileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/weaver/systeminfo/SysMaintenanceLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/prop/edmsaddress.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/prop/edmsinfo.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/prop/openRSA.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/watsons/jsp/HcCodeCheck.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/watsons/jsp/autoClosePage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/watsons/test/handledata/20200110handleBmjz.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/watsons/test/handledata/handleSpecialCha.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/watsons/test/handledata/hideCertificatenum.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/watsons/test/handledata/resetPinyin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/watsons/test/sendEdmsFile.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/watsons/test/zxsql.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Watsons_new.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Watsons_new.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classbean/META-INF/Watsons_new.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classbean/com/api/login/util/LoginUtil$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/api/login/util/LoginUtil$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classbean/com/api/login/util/LoginUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/api/login/util/LoginUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classbean/com/engine/epdocking/util/LoginCheckUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/epdocking/util/LoginCheckUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classbean/com/engine/epdocking/util/TokenInfoUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/epdocking/util/TokenInfoUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classbean/com/engine/epdocking/web/EpSystemAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/epdocking/web/EpSystemAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/ResourceHrms/AddResourceHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/ResourceHrms/AddResourceHrmsCmd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/ResourceHrms/HandleResourceHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/ResourceHrms/HandleResourceHrmsCmd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/ResourceHrms/ReadResourceHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/ResourceHrms/ReadResourceHrmsCmd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/ResourceHrms/UpdateResourceHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/ResourceHrms/UpdateResourceHrmsCmd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/ResourceHrms2/HandleResourceHrms2Cmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/ResourceHrms2/HandleResourceHrms2Cmd.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/organizationHrms/AddOrganizationHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/organizationHrms/AddOrganizationHrmsCmd.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/organizationHrms/HandleOrganizationHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/organizationHrms/HandleOrganizationHrmsCmd.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/organizationHrms/ReadOrganizationHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/organizationHrms/ReadOrganizationHrmsCmd.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/organizationHrms/UpdateOrganizationHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/organizationHrms/UpdateOrganizationHrmsCmd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/entity/OrganizationHrmsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/entity/OrganizationHrmsBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/entity/ResourceHrmsBean$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/entity/ResourceHrmsBean$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/entity/ResourceHrmsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/entity/ResourceHrmsBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/service/impl/LocationHrmsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/service/impl/LocationHrmsServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/service/impl/OrganizationHrmsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/service/impl/OrganizationHrmsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/positionHrms/AddPositionHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/positionHrms/AddPositionHrmsCmd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/positionHrms/ReadPositionHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/positionHrms/ReadPositionHrmsCmd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/positionHrms/UpdatePositionHrmsCmd.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/cmd/positionHrms/UpdatePositionHrmsCmd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/entity/PositionHrmsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/entity/PositionHrmsBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/service/impl/PositionHrmsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/service/impl/PositionHrmsServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classbean/com/engine/sync/util/ResourceUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/com/engine/sync/util/ResourceUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classbean/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classbean/weaver/formmode/customjavacode/browser/HrmresourceBrowser1.class" beforeDir="false" afterPath="$PROJECT_DIR$/classbean/weaver/formmode/customjavacode/browser/HrmresourceBrowser1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/人事流程/主动离职.js" beforeDir="false" afterPath="$PROJECT_DIR$/ecodejs/人事流程/主动离职.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/人事流程/合同续签审批.js" beforeDir="false" afterPath="$PROJECT_DIR$/ecodejs/人事流程/合同续签审批.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/人事流程/被动离职(审批节点).js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/人事流程/被动离职.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/element/iconblock/temp6/Operation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp6/Operation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/element/iconblock/temp6/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/element/iconblock/temp6/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/api/login/util/LoginUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/api/login/util/LoginUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/engine/epdocking/util/LoginCheckUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/epdocking/util/LoginCheckUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/engine/epdocking/util/TokenInfoUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/epdocking/util/TokenInfoUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/engine/epdocking/web/EpSystemAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/epdocking/web/EpSystemAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/AddResourceHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/AddResourceHrmsCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/HandleResourceHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/HandleResourceHrmsCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/ReadResourceHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/ReadResourceHrmsCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/UpdateResourceHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/UpdateResourceHrmsCmd.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/AddOrganizationHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/AddOrganizationHrmsCmd.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/HandleOrganizationHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/HandleOrganizationHrmsCmd.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/ReadOrganizationHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/ReadOrganizationHrmsCmd.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/UpdateOrganizationHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/UpdateOrganizationHrmsCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/entity/OrganizationHrmsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/entity/OrganizationHrmsBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/entity/ResourceHrmsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/entity/ResourceHrmsBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/service/impl/LocationHrmsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/service/impl/LocationHrmsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/service/impl/OrganizationHrmsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/service/impl/OrganizationHrmsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/positionHrms/AddPositionHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/positionHrms/AddPositionHrmsCmd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/positionHrms/ReadPositionHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/positionHrms/ReadPositionHrmsCmd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/cmd/positionHrms/UpdatePositionHrmsCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/cmd/positionHrms/UpdatePositionHrmsCmd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/engine/sync/entity/PositionHrmsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/entity/PositionHrmsBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engine/sync/service/impl/PositionHrmsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/service/impl/PositionHrmsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engine/sync/util/ResourceUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engine/sync/util/ResourceUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/weaver/formmode/customjavacode/browser/HrmresourceBrowser1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/weaver/formmode/customjavacode/browser/HrmresourceBrowser1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/prop/epcheck.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/prop/epcheck.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/watsons/test/handledata/deleteCus.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/watsons/test/handledata/resetAllsupdep.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/watsons/test/handledata/resetAllsupdep.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/watsons/test/lymtest.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/watsons/test/lymtest.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/watsons/test/syncLocation/syncPosition.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/watsons/test/syncLocation/syncPosition.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,16 +145,39 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/impl/ResourceHrms2ServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/hr/StaffAddApplyAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="39" selection-end-column="9" />
+            <state relative-caret-position="436">
+              <caret line="94" column="38" selection-start-line="94" selection-start-column="38" selection-end-line="94" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/hr/StaffAddChangeApplyAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-287">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,100 +186,105 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/engine/sync/entity/ResourceHrms2Bean.java">
+        <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/hr/OnBoardNoticeAction_EDMS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+            <state relative-caret-position="368">
+              <caret line="106" column="59" selection-start-line="106" selection-start-column="59" selection-end-line="106" selection-end-column="59" />
               <folding>
-                <element signature="e#99#100#0" expanded="true" />
-                <element signature="e#130#131#0" expanded="true" />
-                <element signature="e#178#179#0" expanded="true" />
-                <element signature="e#218#219#0" expanded="true" />
-                <element signature="e#259#260#0" expanded="true" />
-                <element signature="e#296#297#0" expanded="true" />
-                <element signature="e#356#357#0" expanded="true" />
-                <element signature="e#408#409#0" expanded="true" />
-                <element signature="e#438#439#0" expanded="true" />
-                <element signature="e#464#465#0" expanded="true" />
-                <element signature="e#502#503#0" expanded="true" />
-                <element signature="e#532#533#0" expanded="true" />
-                <element signature="e#564#565#0" expanded="true" />
-                <element signature="e#592#593#0" expanded="true" />
-                <element signature="e#634#635#0" expanded="true" />
-                <element signature="e#668#669#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1146#1147#0" expanded="true" />
+                <element signature="e#1183#1184#0" expanded="true" />
+                <element signature="e#1243#1244#0" expanded="true" />
+                <element signature="e#1295#1296#0" expanded="true" />
+                <element signature="e#1334#1335#0" expanded="true" />
+                <element signature="e#1369#1370#0" expanded="true" />
+                <element signature="e#1425#1426#0" expanded="true" />
+                <element signature="e#1473#1474#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/watsons/test/syncLocation/syncResource2.jsp">
+        <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/hr/TranferApproveAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+            <state relative-caret-position="404">
+              <caret line="194" column="28" selection-start-line="194" selection-start-column="28" selection-end-line="194" selection-end-column="28" />
+              <folding>
+                <element signature="e#846#847#0" expanded="true" />
+                <element signature="e#879#880#0" expanded="true" />
+                <element signature="e#931#932#0" expanded="true" />
+                <element signature="e#975#976#0" expanded="true" />
+                <element signature="e#1010#1011#0" expanded="true" />
+                <element signature="e#1041#1042#0" expanded="true" />
+                <element signature="e#1089#1090#0" expanded="true" />
+                <element signature="e#1129#1130#0" expanded="true" />
+                <element signature="e#1164#1165#0" expanded="true" />
+                <element signature="e#1195#1196#0" expanded="true" />
+                <element signature="e#1243#1244#0" expanded="true" />
+                <element signature="e#1283#1284#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/人事流程/主动离职.js">
+        <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/hr/UndefinedNameAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="286" column="3" selection-start-line="286" selection-start-column="3" selection-end-line="286" selection-end-column="3" />
+            <state relative-caret-position="207">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/人事流程/被动离职.js">
+        <entry file="file://D:/WEAVER9_KF/ecology/classbean/weaver/general/TimeUtil.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="123" selection-start-line="123" selection-end-line="123" />
+            <state relative-caret-position="281">
+              <caret line="102" column="25" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/人事流程/被动离职(审批节点).js">
+        <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/util/CalendarMethods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="290">
+              <caret line="87" column="25" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
+              <folding>
+                <element signature="e#791#792#0" expanded="true" />
+                <element signature="e#850#851#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/hr/OfferProsoalAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="25" column="90" selection-start-line="19" selection-start-column="4" selection-end-line="25" selection-end-column="90" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/formmode/HcMode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="573">
+              <caret line="107" column="18" lean-forward="true" selection-start-line="107" selection-start-column="18" selection-end-line="107" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/人事流程/合同续签审批.js">
+        <entry file="file://$PROJECT_DIR$/src/com/engine/epdocking/web/EpSystemAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="137" column="2" selection-start-line="137" selection-start-column="2" selection-end-line="137" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/watsons/test/syncLocation/syncManager.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="97" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/watsons/test/syncLocation/syncResource.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/engine/sync/entity/ResourceHrmsBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5980">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="414">
+              <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -204,36 +294,44 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
-        <option value="Jsp File" />
         <option value="JavaScript File" />
+        <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Staff ID</find>
-      <find>lengthList</find>
-      <find>getDepartmentCode</find>
-      <find>jobtitle</find>
-      <find>compare</find>
-      <find>离职日期</find>
-      <find>use</find>
-      <find>setJob</find>
-      <find>getAllSupDepartment</find>
-      <find>getAllParentDepartId</find>
-      <find>HttpManager</find>
-      <find>postDataS</find>
-      <find>managerid</find>
-      <find>endTime</find>
-      <find>dateTimeFormat2</find>
-      <find>send</find>
-      <find>isValid</find>
-      <find>loginid is null</find>
-      <find>checkUserPass==&gt;</find>
+      <find>info222</find>
+      <find>ip</find>
+      <find>epcheck</find>
+      <find>sysadmin</find>
+      <find>needdynapass</find>
+      <find>userCheck2:</find>
+      <find>userCheck</find>
       <find>checkUserPass</find>
-      <find>beforeCheckUser</find>
-      <find>185</find>
+      <find>checkLogin</find>
+      <find>登录成功</find>
+      <find>userCheck:</find>
+      <find>Create</find>
+      <find>forName</find>
+      <find>takeoutFwnx</find>
+      <find>message</find>
+      <find>lym</find>
+      <find>正常登录</find>
+      <find>all</find>
+      <find>manager</find>
+      <find>role</find>
+      <find>allsub</find>
+      <find>allSubdepid</find>
+      <find>matrixtable_2</find>
+      <find>formtable</find>
+      <find>hasRight</find>
+      <find>staffName</find>
+      <find>yhc</find>
+      <find>recui</find>
+      <find>xh</find>
+      <find>recruitmentstatus</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -242,62 +340,63 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/weaver/formmode/customjavacode/browser/HrmresourceBrowser1.java" />
-        <option value="$PROJECT_DIR$/src/weaver/token/LoginUtils.java" />
-        <option value="$PROJECT_DIR$/src/weaver/token/GetTokenInfo.java" />
-        <option value="$PROJECT_DIR$/src/weaver/token/GetSystemList.java" />
-        <option value="$PROJECT_DIR$/src/weaver/token/entity/SystemBean.java" />
-        <option value="$PROJECT_DIR$/src/weaver/token/TokenInfo.java" />
-        <option value="$PROJECT_DIR$/src/weaver/token/SystemList.java" />
-        <option value="$PROJECT_DIR$/src/weaver/token/LoginCheck.java" />
-        <option value="$PROJECT_DIR$/src/weaver/docking/TokenInfo.java" />
-        <option value="$PROJECT_DIR$/src/weaver/docking/SystemList.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/epdocking/service/SystemService.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/epdocking/cmd/systemList/getSystemList.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/epdocking/service/EpSystemService.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/epdocking/service/impl/EpSystemServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/epdocking/web/SystemListAction.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/epdocking/web/EpSystemListAction.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/docking/SystemList.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/docking/TokenInfo.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/epdocking/entity/SystemBean.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/epdocking/util/LoginCheck.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/epdocking/util/SystemListUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/AddOrganizationHrmsCmd.java" />
-        <option value="$PROJECT_DIR$/src/weaver/interfaces/lym/util/CalendarMethods.java" />
-        <option value="$PROJECT_DIR$/web/watsons/test/epdocking/GetTokenInfo.jsp" />
-        <option value="$PROJECT_DIR$/src/com/engine/epdocking/util/TokenInfoUtil.java" />
-        <option value="$PROJECT_DIR$/web/watsons/test/syncLocation/syncManager.jsp" />
-        <option value="$PROJECT_DIR$/src/com/api/epdocking/EpSystemActionApi.java" />
-        <option value="$PROJECT_DIR$/src/weaver/interfaces/lym/util/HttpServiceUtil.java" />
-        <option value="$PROJECT_DIR$/web/watsons/test/epdocking/LoginCheck.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/prop/eplogin.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/prop/eplogincheck.properties" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/prop/epinfo.properties" />
-        <option value="$PROJECT_DIR$/src/com/engine/epdocking/util/LoginCheckUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/api/login/util/LoginUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/epdocking/web/EpSystemAction.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/prop/epcheck.properties" />
-        <option value="$PROJECT_DIR$/src/com/engine/epdocking/cmd/epSystem/GetSystemList.java" />
-        <option value="$PROJECT_DIR$/src/test.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/ReadResourceHrmsCmd.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms2/HandleResourceHrms2Cmd.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms2/UpdateResourceHrms2Cmd.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms2/ReadResourceHrms2Cmd.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/service/ResourceHrms2Service.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/service/impl/ResourceHrms2ServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/util/ResourceUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/engine/sync/entity/ResourceHrms2Bean.java" />
-        <option value="$PROJECT_DIR$/web/watsons/test/syncLocation/syncResource2.jsp" />
+        <option value="$PROJECT_DIR$/web/watsons/test/zxsql.jsp" />
         <option value="$PROJECT_DIR$/js/人事流程/主动离职.js" />
-        <option value="$PROJECT_DIR$/js/人事流程/被动离职.js" />
         <option value="$PROJECT_DIR$/js/人事流程/被动离职(审批节点).js" />
         <option value="$PROJECT_DIR$/js/人事流程/合同续签审批.js" />
+        <option value="$PROJECT_DIR$/js/人事流程/人员增补申请MR.js" />
+        <option value="$PROJECT_DIR$/js/人事流程/调用审批.js" />
+        <option value="$PROJECT_DIR$/js/人事流程/入职审批.js" />
+        <option value="$PROJECT_DIR$/js/人事流程/盖章申请.js" />
+        <option value="$PROJECT_DIR$/js/人事流程/离职交接(员工借款节点申请).js" />
+        <option value="$PROJECT_DIR$/js/人事流程/离职交接(财务提醒).js" />
+        <option value="$PROJECT_DIR$/js/人事流程/离职交接(员工报销确认节点提成).js" />
+        <option value="$PROJECT_DIR$/js/人事流程/试用期转正审批(大于15).js" />
+        <option value="$PROJECT_DIR$/js/人事流程/入职审批(Recuiter_Confirm提醒).js" />
+        <option value="$PROJECT_DIR$/js/人事流程/试用期转正审批(小于等于14).js" />
+        <option value="$PROJECT_DIR$/src/weaver/interfaces/lym/edms/util/EmdsHttpUtilTest.java" />
+        <option value="$PROJECT_DIR$/src/weaver/interfaces/lym/edms/util/EdmsHttpUtil.java" />
+        <option value="$PROJECT_DIR$/src/weaver/interfaces/lym/edms/util/EdmsHttpUtilTest.java" />
+        <option value="$PROJECT_DIR$/js/人事流程/被动离职.js" />
+        <option value="$PROJECT_DIR$/src/weaver/interfaces/lym/edms/util/EdmsHttpUtils.java" />
+        <option value="$PROJECT_DIR$/web/watsons/test/sendEdmsFile.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/prop/epcheck.properties" />
+        <option value="$PROJECT_DIR$/src/com/api/login/util/LoginUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/engine/sync/util/ResourceUtils.java" />
+        <option value="$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/AddResourceHrmsCmd.java" />
+        <option value="$PROJECT_DIR$/src/weaver/interfaces/lym/modeaction.java" />
+        <option value="$PROJECT_DIR$/src/weaver/formmode/customjavacode/modeexpand/CreateInternalApplication.java" />
+        <option value="$PROJECT_DIR$/web/watsons/jsp/autoClosePage.jsp" />
+        <option value="$PROJECT_DIR$/src/test.java" />
+        <option value="$PROJECT_DIR$/ecodejs/人事流程/主动离职.js" />
+        <option value="$PROJECT_DIR$/ecodejs/人事流程/被动离职.js" />
+        <option value="$PROJECT_DIR$/ecodejs/人事流程/被动离职(审批节点).js" />
+        <option value="$PROJECT_DIR$/ecodejs/人事流程/合同续签审批.js" />
+        <option value="$PROJECT_DIR$/ecodejs/人事流程/人员增补申请MR.js" />
+        <option value="$PROJECT_DIR$/ecodejs/人事流程/调用审批.js" />
+        <option value="$PROJECT_DIR$/ecodejs/人事流程/入职审批.js" />
+        <option value="$PROJECT_DIR$/ecodejs/人事流程/盖章申请.js" />
+        <option value="$PROJECT_DIR$/ecodejs/人事流程/离职交接(员工借款节点申请).js" />
+        <option value="$PROJECT_DIR$/ecodejs/人事流程/离职交接(财务提醒).js" />
+        <option value="$PROJECT_DIR$/ecodejs/人事流程/离职交接(员工报销确认节点提成).js" />
+        <option value="$PROJECT_DIR$/ecodejs/人事流程/试用期转正审批(小于等于14).js" />
+        <option value="$PROJECT_DIR$/ecodejs/人事流程/试用期转正审批(大于15).js" />
+        <option value="$PROJECT_DIR$/ecodejs/人事流程/入职审批(Recuiter_Confirm提醒).js" />
+        <option value="$PROJECT_DIR$/src/weaver/interfaces/lym/cronjob/CreateProbationConfirmation.java" />
+        <option value="$PROJECT_DIR$/src/weaver/interfaces/lym/operatoraction/getAllManagerEndWithFunctionHEAD.java" />
+        <option value="$PROJECT_DIR$/src/weaver/interfaces/lym/cronjob/CreateProbationConfirmationCronjob.java" />
+        <option value="$PROJECT_DIR$/web/watsons/jsp/HcCodeCheck.jsp" />
+        <option value="$PROJECT_DIR$/src/weaver/interfaces/lym/cronjob/CreateContracrRenewalCronjob.java" />
+        <option value="$PROJECT_DIR$/src/weaver/interfaces/lym/hr/OnBoardNoticeAction_EDMS.java" />
+        <option value="$PROJECT_DIR$/src/weaver/interfaces/lym/util/ImageFileUtils.java" />
+        <option value="$PROJECT_DIR$/src/weaver/interfaces/lym/formmode/HcMode.java" />
+        <option value="$PROJECT_DIR$/src/weaver/interfaces/lym/hr/TranferApproveAction.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="width" value="1920" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="1934" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -306,6 +405,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -317,30 +417,234 @@
             <path>
               <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
               <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
               <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="人事流程" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="epdocking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="epdocking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="epdocking" type="462c0819:PsiDirectoryNode" />
+              <item name="epSystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="epdocking" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="epdocking" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="epdocking" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="epdocking" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="sync" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="sync" type="462c0819:PsiDirectoryNode" />
+              <item name="cmd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="sync" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="weaver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="weaver" type="462c0819:PsiDirectoryNode" />
+              <item name="lym" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="weaver" type="462c0819:PsiDirectoryNode" />
+              <item name="lym" type="462c0819:PsiDirectoryNode" />
+              <item name="cronjob" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="weaver" type="462c0819:PsiDirectoryNode" />
+              <item name="lym" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="weaver" type="462c0819:PsiDirectoryNode" />
+              <item name="lym" type="462c0819:PsiDirectoryNode" />
+              <item name="hr" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="weaver" type="462c0819:PsiDirectoryNode" />
+              <item name="lym" type="462c0819:PsiDirectoryNode" />
+              <item name="operatoraction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="weaver" type="462c0819:PsiDirectoryNode" />
+              <item name="lym" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="watsons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="watsons" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="watsons" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Watsons_new" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="prop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Watsons_new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/plugin/element/iconblock/temp6" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/plugin/element/iconblock" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -351,11 +655,11 @@
       <recent name="weaver.interfaces.lym.util" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Idea_workspace\Watsons_new\plugin\element\iconblock" />
       <recent name="D:\Idea_workspace\Watsons_new\plugin\element\iconblock\temp6" />
-      <recent name="D:\Idea_workspace\Watsons_new\web\watsons\test\epdocking" />
       <recent name="D:\Idea_workspace\Watsons_new\web\WEB-INF\prop" />
+      <recent name="D:\Idea_workspace\Watsons_new\web\watsons\test\epdocking" />
       <recent name="D:\Idea_workspace\Watsons_new\src\com\api\login\util" />
-      <recent name="D:\Idea_workspace\Watsons_new\src\com\engine\epdocking\util" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -370,13 +674,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.test">
-    <configuration name="LoginCheck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="weaver.token.LoginCheck" />
+  <component name="RunManager" selected="Application.EdmsHttpUtils">
+    <configuration name="BackupHcDataMonthlyCronjob" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="weaver.interfaces.lym.cronjob.BackupHcDataMonthlyCronjob" />
       <module name="Watsons_new" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="weaver.token.*" />
+          <option name="PATTERN" value="weaver.interfaces.lym.cronjob.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -384,12 +688,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadOrganizationHrmsCmd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.engine.sync.cmd.organizationHrms.ReadOrganizationHrmsCmd" />
+    <configuration name="EdmsHttpUtilTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="weaver.interfaces.lym.edms.util.EdmsHttpUtilTest" />
       <module name="Watsons_new" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.engine.sync.cmd.organizationHrms.*" />
+          <option name="PATTERN" value="weaver.interfaces.lym.edms.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -397,12 +701,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadResourceHrmsCmd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.engine.sync.cmd.ResourceHrms.ReadResourceHrmsCmd" />
+    <configuration name="EdmsHttpUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="weaver.interfaces.lym.edms.util.EdmsHttpUtils" />
       <module name="Watsons_new" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.engine.sync.cmd.ResourceHrms.*" />
+          <option name="PATTERN" value="weaver.interfaces.lym.edms.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -423,12 +727,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TokenInfo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="weaver.token.TokenInfo" />
+    <configuration name="StaffAddApplyAction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="weaver.interfaces.lym.hr.StaffAddApplyAction" />
       <module name="Watsons_new" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="weaver.token.*" />
+          <option name="PATTERN" value="weaver.interfaces.lym.hr.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -445,10 +749,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EdmsHttpUtils" />
+        <item itemvalue="Application.EdmsHttpUtilTest" />
+        <item itemvalue="Application.StaffAddApplyAction" />
+        <item itemvalue="Application.BackupHcDataMonthlyCronjob" />
         <item itemvalue="Application.test" />
-        <item itemvalue="Application.LoginCheck" />
-        <item itemvalue="Application.ReadResourceHrmsCmd" />
-        <item itemvalue="Application.ReadOrganizationHrmsCmd" />
       </list>
     </recent_temporary>
   </component>
@@ -485,11 +790,253 @@
       <workItem from="1576771586413" duration="37657000" />
       <workItem from="1577068466894" duration="58185000" />
       <workItem from="1577282262861" duration="7628000" />
+      <workItem from="1577674231208" duration="3976000" />
+      <workItem from="1577837472306" duration="599000" />
+      <workItem from="1578037379587" duration="2940000" />
+      <workItem from="1578178610638" duration="599000" />
+      <workItem from="1578190609061" duration="599000" />
+      <workItem from="1578239982114" duration="599000" />
+      <workItem from="1578291742382" duration="75000" />
+      <workItem from="1578313485776" duration="10089000" />
+      <workItem from="1578565032313" duration="599000" />
+      <workItem from="1578620829335" duration="553000" />
+      <workItem from="1578622063759" duration="4000" />
+      <workItem from="1578622182069" duration="346000" />
+      <workItem from="1578622718100" duration="2067000" />
+      <workItem from="1578638737369" duration="13133000" />
+      <workItem from="1578973137414" duration="20460000" />
+      <workItem from="1579088164281" duration="2358000" />
+      <workItem from="1579170061335" duration="1602000" />
+      <workItem from="1579232980442" duration="1273000" />
+      <workItem from="1579248315542" duration="42999000" />
+      <workItem from="1579511065357" duration="318000" />
+      <workItem from="1579529222999" duration="918000" />
+      <workItem from="1579531265468" duration="605000" />
+      <workItem from="1579533085628" duration="867000" />
+      <workItem from="1579534895512" duration="641000" />
+      <workItem from="1579597482795" duration="627000" />
+      <workItem from="1579599805261" duration="370000" />
+      <workItem from="1580889226544" duration="167000" />
+      <workItem from="1580889551392" duration="391000" />
+      <workItem from="1580889965881" duration="13175000" />
+      <workItem from="1581090437734" duration="4567000" />
+      <workItem from="1581215817373" duration="12829000" />
+      <workItem from="1581317389515" duration="8917000" />
+      <workItem from="1581478737522" duration="599000" />
+      <workItem from="1581493112195" duration="599000" />
+      <workItem from="1581495314951" duration="1900000" />
+      <workItem from="1581497503137" duration="599000" />
+      <workItem from="1581506332167" duration="599000" />
+      <workItem from="1581509845977" duration="599000" />
+      <workItem from="1581514280233" duration="1985000" />
+      <workItem from="1581517036816" duration="1619000" />
+      <workItem from="1581519021264" duration="757000" />
+      <workItem from="1581561653450" duration="1915000" />
+      <workItem from="1581563966517" duration="881000" />
+      <workItem from="1581573050473" duration="608000" />
+      <workItem from="1581575556181" duration="2134000" />
+      <workItem from="1581577726398" duration="1279000" />
+      <workItem from="1581580903200" duration="1853000" />
+      <workItem from="1581583749163" duration="706000" />
+      <workItem from="1581586238253" duration="599000" />
+      <workItem from="1581675946249" duration="599000" />
+      <workItem from="1581683578926" duration="599000" />
+      <workItem from="1581686148939" duration="599000" />
+      <workItem from="1581733156522" duration="984000" />
+      <workItem from="1581734996523" duration="599000" />
+      <workItem from="1581743851516" duration="599000" />
+      <workItem from="1581750638135" duration="599000" />
+      <workItem from="1581765477844" duration="599000" />
+      <workItem from="1581832648108" duration="599000" />
+      <workItem from="1581852437390" duration="599000" />
+      <workItem from="1581898039297" duration="599000" />
+      <workItem from="1581906415313" duration="599000" />
+      <workItem from="1581909586077" duration="599000" />
+      <workItem from="1581925933880" duration="616000" />
+      <workItem from="1581943534706" duration="1079000" />
+      <workItem from="1581945350707" duration="657000" />
+      <workItem from="1581948431314" duration="599000" />
+      <workItem from="1581950311475" duration="598000" />
+      <workItem from="1581952305223" duration="599000" />
+      <workItem from="1581989968578" duration="625000" />
+      <workItem from="1581991815273" duration="599000" />
+      <workItem from="1581994037720" duration="599000" />
+      <workItem from="1582003098539" duration="1140000" />
+      <workItem from="1582011381911" duration="599000" />
+      <workItem from="1582014550726" duration="599000" />
+      <workItem from="1582076942439" duration="599000" />
+      <workItem from="1582088363417" duration="599000" />
+      <workItem from="1582095515305" duration="974000" />
+      <workItem from="1582097403572" duration="599000" />
+      <workItem from="1582101787696" duration="1084000" />
+      <workItem from="1582121644977" duration="599000" />
+      <workItem from="1582126159034" duration="839000" />
+      <workItem from="1582167013099" duration="1587000" />
+      <workItem from="1582170644758" duration="599000" />
+      <workItem from="1582248278448" duration="1971000" />
+      <workItem from="1582250325276" duration="1621000" />
+      <workItem from="1582252273130" duration="1777000" />
+      <workItem from="1582254081232" duration="1819000" />
+      <workItem from="1582255974558" duration="1628000" />
+      <workItem from="1582268606613" duration="599000" />
+      <workItem from="1582270977207" duration="598000" />
+      <workItem from="1582273413331" duration="623000" />
+      <workItem from="1582373714002" duration="1750000" />
+      <workItem from="1582375507833" duration="928000" />
+      <workItem from="1582384770272" duration="713000" />
+      <workItem from="1582502431033" duration="599000" />
+      <workItem from="1582504595683" duration="599000" />
+      <workItem from="1582509453715" duration="599000" />
+      <workItem from="1582512860875" duration="599000" />
+      <workItem from="1582517129261" duration="599000" />
+      <workItem from="1582528430232" duration="599000" />
+      <workItem from="1582596605798" duration="1066000" />
+      <workItem from="1582598454262" duration="1404000" />
+      <workItem from="1582611652028" duration="1420000" />
+      <workItem from="1582613846127" duration="1028000" />
+      <workItem from="1582618930342" duration="609000" />
+      <workItem from="1582644855470" duration="607000" />
+      <workItem from="1582681404124" duration="599000" />
+      <workItem from="1582685586177" duration="599000" />
+      <workItem from="1582687712303" duration="599000" />
+      <workItem from="1582689544013" duration="599000" />
+      <workItem from="1582691451324" duration="599000" />
+      <workItem from="1582700491048" duration="599000" />
+      <workItem from="1582708870824" duration="599000" />
+      <workItem from="1582710690640" duration="1203000" />
+      <workItem from="1582715728502" duration="599000" />
+      <workItem from="1582811793802" duration="1276000" />
+      <workItem from="1582845727501" duration="599000" />
+      <workItem from="1582847896431" duration="599000" />
+      <workItem from="1582850460593" duration="679000" />
+      <workItem from="1582854493590" duration="599000" />
+      <workItem from="1582859879477" duration="718000" />
+      <workItem from="1582875404203" duration="599000" />
+      <workItem from="1582882029905" duration="31000" />
+      <workItem from="1582891753583" duration="352000" />
+      <workItem from="1582892768571" duration="2681000" />
+      <workItem from="1582895495639" duration="599000" />
+      <workItem from="1583027836804" duration="109000" />
+      <workItem from="1583028786960" duration="1409000" />
+      <workItem from="1583030812052" duration="1804000" />
+      <workItem from="1583032640069" duration="1072000" />
+      <workItem from="1583043077470" duration="2318000" />
+      <workItem from="1583046845495" duration="1788000" />
+      <workItem from="1583049038901" duration="1991000" />
+      <workItem from="1583051211681" duration="1739000" />
+      <workItem from="1583058994946" duration="1777000" />
+      <workItem from="1583060798971" duration="1788000" />
+      <workItem from="1583062631411" duration="1839000" />
+      <workItem from="1583064506251" duration="1785000" />
+      <workItem from="1583066317536" duration="1789000" />
+      <workItem from="1583068136829" duration="1787000" />
+      <workItem from="1583069963140" duration="1788000" />
+      <workItem from="1583071782487" duration="1379000" />
+      <workItem from="1583073838680" duration="1710000" />
+      <workItem from="1583075727362" duration="1775000" />
+      <workItem from="1583077556220" duration="1046000" />
+      <workItem from="1583101403032" duration="1781000" />
+      <workItem from="1583103273812" duration="1628000" />
+      <workItem from="1583105239941" duration="599000" />
+      <workItem from="1583109598991" duration="599000" />
+      <workItem from="1583112652802" duration="599000" />
+      <workItem from="1583114893155" duration="1075000" />
+      <workItem from="1583116773278" duration="1817000" />
+      <workItem from="1583118627596" duration="1771000" />
+      <workItem from="1583121529344" duration="603000" />
+      <workItem from="1583130162484" duration="599000" />
+      <workItem from="1583152126609" duration="1868000" />
+      <workItem from="1583156063794" duration="1794000" />
+      <workItem from="1583157921019" duration="1998000" />
+      <workItem from="1583199381983" duration="1113000" />
+      <workItem from="1583202341893" duration="1699000" />
+      <workItem from="1583204422589" duration="77000" />
+      <workItem from="1583204534192" duration="2098000" />
+      <workItem from="1583206667919" duration="687000" />
+      <workItem from="1583217011828" duration="623000" />
+      <workItem from="1583220524066" duration="1362000" />
+      <workItem from="1583222688055" duration="599000" />
+      <workItem from="1583229876678" duration="599000" />
+      <workItem from="1583284382846" duration="611000" />
+      <workItem from="1583286226894" duration="599000" />
+      <workItem from="1583288281354" duration="601000" />
+      <workItem from="1583291939001" duration="599000" />
+      <workItem from="1583300445182" duration="599000" />
+      <workItem from="1583302745237" duration="599000" />
+      <workItem from="1583307984985" duration="599000" />
+      <workItem from="1583311103109" duration="599000" />
+      <workItem from="1583314348455" duration="599000" />
+      <workItem from="1583316403022" duration="599000" />
+      <workItem from="1583318724940" duration="856000" />
+      <workItem from="1583372230321" duration="599000" />
+      <workItem from="1583374292176" duration="599000" />
+      <workItem from="1583386737027" duration="599000" />
+      <workItem from="1583389154401" duration="1064000" />
+      <workItem from="1583391653774" duration="1900000" />
+      <workItem from="1583402328964" duration="508000" />
+      <workItem from="1583415900153" duration="2010000" />
+      <workItem from="1583419119640" duration="1397000" />
+      <workItem from="1583457224132" duration="599000" />
+      <workItem from="1583561167318" duration="599000" />
+      <workItem from="1583579339311" duration="1452000" />
+      <workItem from="1583581145849" duration="1780000" />
+      <workItem from="1583582966299" duration="2100000" />
+      <workItem from="1583585205891" duration="1175000" />
+      <workItem from="1583678894571" duration="597000" />
+      <workItem from="1583719682416" duration="1304000" />
+      <workItem from="1583722996378" duration="626000" />
+      <workItem from="1583726079202" duration="928000" />
+      <workItem from="1583732839316" duration="1212000" />
+      <workItem from="1583734647928" duration="599000" />
+      <workItem from="1583737336568" duration="599000" />
+      <workItem from="1583740586693" duration="376000" />
+      <workItem from="1583742012019" duration="619000" />
+      <workItem from="1583743851024" duration="599000" />
+      <workItem from="1583745463920" duration="599000" />
+      <workItem from="1583795245347" duration="599000" />
+      <workItem from="1583797094037" duration="603000" />
+      <workItem from="1583802458752" duration="1247000" />
+      <workItem from="1583805659397" duration="599000" />
+      <workItem from="1583808727887" duration="599000" />
+      <workItem from="1583811035032" duration="599000" />
+      <workItem from="1583819449859" duration="599000" />
+      <workItem from="1583821318161" duration="599000" />
+      <workItem from="1583823705844" duration="599000" />
+      <workItem from="1583852396272" duration="599000" />
+      <workItem from="1583907547253" duration="603000" />
+      <workItem from="1583913497413" duration="479000" />
+      <workItem from="1583914002013" duration="599000" />
+      <workItem from="1583916215280" duration="615000" />
+      <workItem from="1583919111822" duration="599000" />
+      <workItem from="1583921489015" duration="565000" />
+      <workItem from="1583978730966" duration="181000" />
+      <workItem from="1583993455110" duration="599000" />
+      <workItem from="1583995489252" duration="543000" />
+      <workItem from="1584016864446" duration="987000" />
+      <workItem from="1584018185322" duration="685000" />
+      <workItem from="1584020004076" duration="599000" />
+      <workItem from="1584021848292" duration="344000" />
+      <workItem from="1584028320096" duration="599000" />
+      <workItem from="1584032535696" duration="380000" />
+      <workItem from="1584064089914" duration="599000" />
+      <workItem from="1584067279401" duration="599000" />
+      <workItem from="1584074922581" duration="680000" />
+      <workItem from="1584076742748" duration="599000" />
+      <workItem from="1584078547949" duration="599000" />
+      <workItem from="1584080632961" duration="1081000" />
+      <workItem from="1584158774804" duration="881000" />
+      <workItem from="1584331068563" duration="12067000" />
+      <workItem from="1584415761802" duration="10944000" />
+      <workItem from="1584434443088" duration="9591000" />
+      <workItem from="1584518295328" duration="35000" />
+      <workItem from="1584520668662" duration="68000" />
+      <workItem from="1584522158143" duration="599000" />
+      <workItem from="1584524712042" duration="29248000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="286586000" />
+    <option name="totallyTimeSpent" value="689664000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -501,10 +1048,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="0" width="1934" height="1047" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20537634" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15741728" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -514,15 +1060,15 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3274918" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.324295" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39868566" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.22672509" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22234392" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32827735" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.42278203" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.42059144" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.329718" />
@@ -581,92 +1127,223 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/prop/eplogin.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/prop/eplogincheck.properties" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/prop/ep.properties" />
-    <entry file="file://$PROJECT_DIR$/src/weaver/formmode/customjavacode/browser/DepartmentBrowser1.java">
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms2/UpdateResourceHrms2Cmd.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/epdocking/entity/EpSystemBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/epdocking/entity/SystemBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
+        <state relative-caret-position="92">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/epdocking/util/TokenInfoUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/UpdateResourceHrmsCmd.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        <state relative-caret-position="92">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/HandleResourceHrmsCmd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms2/HandleResourceHrms2Cmd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/entity/OrganizationHrmsBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="86" column="30" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="30" />
+          <folding>
+            <element signature="e#1487#1488#0" expanded="true" />
+            <element signature="e#1521#1522#0" expanded="true" />
+            <element signature="e#1575#1576#0" expanded="true" />
+            <element signature="e#1621#1622#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/HandleOrganizationHrmsCmd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/organizationHrms/ReadOrganizationHrmsCmd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1127">
+          <caret line="55" column="61" selection-start-line="55" selection-start-column="61" selection-end-line="55" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/util/ResourceUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/WEAVER9_KF/ecology/classbean/weaver/hrm/company/DepartmentComInfo.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="345" column="20" lean-forward="true" selection-start-line="345" selection-start-column="20" selection-end-line="345" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/operatoraction/getAllManagerEndWithFunctionHEAD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="48" column="28" lean-forward="true" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/prop/epinfo.properties">
+    <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/cronjob/UpdateHcRecstatusCronjob.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/prop/epcheck.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/hr/UndefinedNameAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="45" column="96" selection-start-line="45" selection-start-column="96" selection-end-line="45" selection-end-column="96" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/util/HttpServiceUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="200" column="26" selection-start-line="200" selection-start-column="26" selection-end-line="200" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/util/CalendarMethods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="184">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/util/WorkflowToolMethods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="31" />
+        <state relative-caret-position="4715">
+          <caret line="215" column="5" selection-start-line="215" selection-start-column="5" selection-end-line="215" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/watsons/test/epdocking/LoginCheck.jsp">
+    <entry file="file://$PROJECT_DIR$/src/weaver/formmode/customjavacode/browser/DepartmentBrowser1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="80" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="80" />
+        <state relative-caret-position="782">
+          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/WEAVER9_KF/ecology/classbean/weaver/interfaces/workflow/action/OperatorAction.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/watsons/jsp/getL5Dept.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="2" lean-forward="true" selection-end-line="18" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/cronjob/CreateProbationConfirmationCronjob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1288">
+          <caret line="76" column="4" selection-start-line="76" selection-start-column="4" selection-end-line="80" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/cronjob/BackupHcDataMonthlyCronjob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="21" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/cronjob/CreateContracrRenewalCronjob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="73" column="57" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/watsons/jsp/HcCodeCheck.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/OrganizationHrmsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/ResourceHrms2Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/impl/LocationHrmsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-115">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/locationHrms/HandleLocationHrmsCmd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/impl/OrganizationHrmsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/LocationHrmsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/epdocking/service/impl/EpSystemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/epdocking/service/EpSystemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/locationHrms/AddLocationHrmsCmd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -682,285 +1359,180 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/api/login/util/LoginUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="841">
-          <caret line="1442" column="1" selection-start-line="1442" selection-start-column="1" selection-end-line="1442" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/epdocking/service/EpSystemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/epdocking/util/LoginCheckUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/epdocking/util/SystemListUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="15" column="2" selection-end-line="24" />
+        <state relative-caret-position="850">
+          <caret line="814" column="28" selection-start-line="814" selection-start-column="28" selection-end-line="814" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugin/element/iconblock/temp6/main.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/watsons/jsp/getL5Dept.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/watsons/test/epdocking/GetTokenInfo.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/engine/epdocking/cmd/epSystem/GetSystemList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+        <state relative-caret-position="280">
+          <caret line="40" column="34" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/element/iconblock/temp16/css/base.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/prop/edmsaddress.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/edms/util/EdmsHttpUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1313">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/prop/epcheck.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/prop/edmsinfo.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/WEAVER9_KF/ecology/classbean/weaver/file/ImageFileManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="265" column="30" selection-start-line="265" selection-start-column="30" selection-end-line="265" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/util/ImageFileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="51" column="7" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/util/HttpServiceUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-391">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/edms/util/EdmsHttpUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="131" column="30" selection-start-line="131" selection-start-column="18" selection-end-line="131" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/util/CalendarMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="87" column="25" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
+          <folding>
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/WEAVER9_KF/ecology/classbean/weaver/general/TimeUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="102" column="25" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/hr/OfferProsoalAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="25" column="90" selection-start-line="19" selection-start-column="4" selection-end-line="25" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/hr/UndefinedNameAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/hr/OnBoardNoticeAction_EDMS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="106" column="59" selection-start-line="106" selection-start-column="59" selection-end-line="106" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
+            <element signature="e#1183#1184#0" expanded="true" />
+            <element signature="e#1243#1244#0" expanded="true" />
+            <element signature="e#1295#1296#0" expanded="true" />
+            <element signature="e#1334#1335#0" expanded="true" />
+            <element signature="e#1369#1370#0" expanded="true" />
+            <element signature="e#1425#1426#0" expanded="true" />
+            <element signature="e#1473#1474#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/hr/StaffAddApplyAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="94" column="38" selection-start-line="94" selection-start-column="38" selection-end-line="94" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/hr/StaffAddChangeApplyAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-287">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/hr/TranferApproveAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="194" column="28" selection-start-line="194" selection-start-column="28" selection-end-line="194" selection-end-column="28" />
+          <folding>
+            <element signature="e#846#847#0" expanded="true" />
+            <element signature="e#879#880#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#1089#1090#0" expanded="true" />
+            <element signature="e#1129#1130#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1195#1196#0" expanded="true" />
+            <element signature="e#1243#1244#0" expanded="true" />
+            <element signature="e#1283#1284#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weaver/interfaces/lym/formmode/HcMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="107" column="18" lean-forward="true" selection-start-line="107" selection-start-column="18" selection-end-line="107" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/engine/epdocking/web/EpSystemAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/epdocking/service/impl/EpSystemServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugin/element/iconblock/temp6/Operation.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/epdocking/cmd/epSystem/GetSystemList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/watsons/test/epdocking/getLoginSession.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
-          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/positionHrms/ReadPositionHrmsCmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="41" column="13" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="41" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/AddResourceHrmsCmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/HandleResourceHrmsCmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/ReadResourceHrmsCmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2020">
-          <caret line="32" column="38" lean-forward="true" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/ResourceHrmsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms/UpdateResourceHrmsCmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/impl/LocationHrmsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="44" column="9" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="44" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/impl/ResourceHrmsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-322">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms2/HandleResourceHrms2Cmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/util/ResourceUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/ResourceHrms2Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms2/UpdateResourceHrms2Cmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/cmd/ResourceHrms2/ReadResourceHrms2Cmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="44" column="56" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/entity/ResourceHrmsBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5980">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/entity/ResourceHrms2Bean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
-          <folding>
-            <element signature="e#99#100#0" expanded="true" />
-            <element signature="e#130#131#0" expanded="true" />
-            <element signature="e#178#179#0" expanded="true" />
-            <element signature="e#218#219#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
-            <element signature="e#356#357#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-            <element signature="e#438#439#0" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-            <element signature="e#532#533#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#668#669#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/engine/sync/service/impl/ResourceHrms2ServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="39" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/watsons/test/syncLocation/syncResource.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/watsons/test/syncLocation/syncManager.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/watsons/test/syncLocation/syncResource2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/人事流程/主动离职.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="286" column="3" selection-start-line="286" selection-start-column="3" selection-end-line="286" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/人事流程/被动离职.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="123" selection-start-line="123" selection-end-line="123" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/人事流程/被动离职(审批节点).js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/人事流程/合同续签审批.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="137" column="2" selection-start-line="137" selection-start-column="2" selection-end-line="137" selection-end-column="2" />
+          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -993,7 +1565,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>lib</last-edited>
+          <last-edited>classbean</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1017,7 +1589,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Watsons_new</last-edited>
+          <last-edited>Web|Watsons_new</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

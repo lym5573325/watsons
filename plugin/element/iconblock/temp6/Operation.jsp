@@ -25,8 +25,7 @@
 
 	JSONArray arrs = jsonconf.getJSONArray("list"); 
 	json.put("datas", formatHrefforList(arrs,user,request));
-	//json.put("colnum", jsonconf.getString("colnum"));
-	json.put("colnum", "2");
+	json.put("colnum", jsonconf.getString("colnum"));
 	json.put("status", "0");
 	out.write(json.toString());
 %>

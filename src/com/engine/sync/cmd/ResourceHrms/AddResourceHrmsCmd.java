@@ -18,11 +18,15 @@ public class AddResourceHrmsCmd {
     protected boolean execute(ResourceHrmsBean bean){
         //new BaseBean().writeLog("新增人员:"+bean.toString());
         RecordSet rs = new RecordSet();
+        int maxid = ResourceUtils.getMaxId();
         if(rs.executeUpdate(addSql,ResourceUtils.getMaxId(), bean.getWorkcode(),bean.getLastname(),bean.getDepartmentid(),
                 bean.getSubcompanyid1(),bean.getJobtitle(),bean.getPhone(),bean.getUsekind(),bean.getCompanystartdate(),
                 bean.getStatus(), bean.getTempfield6(), bean.getWorkcode(), CalendarMethods.getCurrentDate(),"1",bean.getSeclevel(),
                 bean.getPinyinlastname(), bean.getPinyinlastname())
-        ) cusData(bean);
+        ){
+            cusData(bean);
+            ResourceUtils.setMaxId(maxid+1);
+        }
         return false;
     }
 

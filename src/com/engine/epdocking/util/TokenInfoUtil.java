@@ -37,7 +37,7 @@ public class TokenInfoUtil {
                 return temp.getString("encrykey");
         }catch(JSONException e){
             //bb.writeLog("getEncrykey()==>异常");
-            System.out.println("getEncrykey()==>异常");
+            //System.out.println("getEncrykey()==>异常");
         }
         return "";
     }
@@ -74,7 +74,7 @@ public class TokenInfoUtil {
 
     private JSONObject send(){
         bb.writeLog("发送请求获取token");
-        System.out.println("发送请求获取token");
+        //System.out.println("发送请求获取token");
         JSONObject requestInfo = new JSONObject();
         JSONObject responseInfo = new JSONObject();
         try {

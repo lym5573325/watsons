@@ -11,6 +11,17 @@ public class PositionHrmsBean {
     //特殊处理字段
     private String jobtitleMark;
 
+    public String getJobtitlePinyin() {
+        return jobtitlePinyin;
+    }
+
+    public void setJobtitlePinyin(String jobtitlePinyin) {
+        this.jobtitlePinyin = jobtitlePinyin;
+    }
+
+    //模糊搜索拼音
+    private String jobtitlePinyin;
+
     public String getJobtitleCode() {
         return jobtitleCode;
     }

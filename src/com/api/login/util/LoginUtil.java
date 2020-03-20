@@ -21,15 +21,15 @@ import weaver.hrm.settings.BirthdayReminder;
 import weaver.hrm.settings.ChgPasswdReminder;
 import weaver.hrm.settings.HrmSettingsComInfo;
 import weaver.hrm.settings.RemindSettings;
-import weaver.login.Base64;
 import weaver.login.*;
-import weaver.rsa.security.RSA;
+import weaver.login.Base64;
 import weaver.sm.SM3Utils;
 import weaver.sm.SM4Utils;
 import weaver.sms.SMSManager;
 import weaver.systeminfo.SysMaintenanceLog;
 import weaver.systeminfo.SystemEnv;
 import weaver.usb.UsbKeyProxy;
+import weaver.rsa.security.RSA;
 
 import javax.servlet.ServletContext;
 import javax.servlet.http.Cookie;
@@ -42,20 +42,18 @@ import java.util.*;
 public class LoginUtil extends BaseBean {
     private String isADAccount = "";
     private String ipAddress = "";//用于记录日志用的IP地址
+    private int clientType = 0;//用于记录日志用的客户端类型
 
-    private String ldapError = "";
     private String loginSession = "";
     private LoginCheckUtil loginCheckUtil = new LoginCheckUtil();
+    private String ldapError = "";
 
     public String[] checkLogin(ServletContext application, HttpServletRequest request, HttpServletResponse response) throws Exception {
         String usercheck = beforeCheckUser(request, response);
-        writeLog("userCheck:"+usercheck);
         if (usercheck.equals("")) {
-            writeLog("userCheck null");
             usercheck = getUserCheck(application, request, response);
             if(usercheck.equals("17"))usercheck="16";
         }
-        writeLog("userCheck2:"+usercheck);
         afterCheckUser(application, request, response, usercheck);
         return getErrorMsg(application, request, response, usercheck);
     }
@@ -140,6 +138,10 @@ public class LoginUtil extends BaseBean {
             request.getSession(true).setAttribute("weaver_login_type",weaver_login_type);
             try {
                 response.addHeader("Set-Cookie", "__clusterSessionIDCookieName=" + Util.getCookie(request, "__clusterSessionIDCookieName") + ";expires=Thu, 01-Dec-1994 16:00:00 GMT;Path=/;HttpOnly");
+
+                //QC747831
+                response.addHeader("Set-Cookie","JSESSIONID="+Util.getCookie(request,"JSESSIONID")+";expires=Thu, 01-Dec-1994 16:00:00 GMT;Path=/;HttpOnly");
+                response.addHeader("Set-Cookie"," ecology_JSessionId ="+Util.getCookie(request," ecology_JSessionId ")+";expires=Thu, 01-Dec-1994 16:00:00 GMT;Path=/;HttpOnly");
             } catch (Exception e) {
             }
             //weaver.hrm.HrmUserVarify.invalidateCookie(request,response);
@@ -157,6 +159,7 @@ public class LoginUtil extends BaseBean {
             sysMaintenanceLog.setOperateItem("505");
             sysMaintenanceLog.setOperateUserid(user.getUID());
             sysMaintenanceLog.setClientAddress(request.getRemoteAddr());
+            sysMaintenanceLog.setClientType(1);
             sysMaintenanceLog.setSysLogInfo();
             /*记录登出日志*/
 
@@ -165,6 +168,7 @@ public class LoginUtil extends BaseBean {
     }
 
     private String getUserCheck(ServletContext application, HttpServletRequest request, HttpServletResponse response) throws Exception {
+        RSA rsa = new RSA();
         RecordSet rs = new RecordSet();
         char separator = Util.getSeparator();
         String message = "";
@@ -174,7 +178,6 @@ public class LoginUtil extends BaseBean {
         List<String> decriptList = new ArrayList<>() ;
 
         if("1".equals(isrsaopen)){
-            RSA rsa = new RSA();
             decriptList.add(login_id) ;
             decriptList.add(user_password) ;
             List<String> resultList = rsa.decryptList(request,decriptList) ;
@@ -207,7 +210,7 @@ public class LoginUtil extends BaseBean {
         String ismobile = Util.null2String(request.getParameter("ismobile")) ;
         if(!"1".equals(ismobile)){
             try{
-                LoginStrategyManager.checkLoginStrategy(login_id, Util.getIpAddr(request));
+                LoginStrategyManager.checkLoginStrategy(login_id,Util.getIpAddr(request));
             }catch (LoginStrategyException e){
                 return e.getCode() ;
             }
@@ -299,7 +302,7 @@ public class LoginUtil extends BaseBean {
                 User user = new User();
                 user.setUid(rs.getInt("id"));
                 user.setLoginid(login_id);
-                user.setPwd(user_password);
+                user.setPwd(rsa.encrypt(null,user_password,null));
                 user.setFirstname(rs.getString("firstname"));
                 user.setLastname(rs.getString("lastname"));
                 user.setAliasname(rs.getString("aliasname"));
@@ -501,6 +504,8 @@ public class LoginUtil extends BaseBean {
                 char separater = Util.getSeparator();
                 rs.execute("HrmResource_UpdateLoginDate", rs.getString("id") + separater + currentdate);
 
+                //判断是否是手机端登录
+                String isMobile = Util.null2String(request.getParameter("ismobile"));
                 SysMaintenanceLog log = new SysMaintenanceLog();
                 log.resetParameter();
                 log.setRelatedId(rs.getInt("id"));
@@ -510,6 +515,11 @@ public class LoginUtil extends BaseBean {
                 log.setOperateItem("60");
                 log.setOperateUserid(rs.getInt("id"));
                 log.setClientAddress(request.getRemoteAddr());
+                if (isMobile.equals("1")) {
+                    log.setClientType(2);
+                } else {
+                    log.setClientType(1);
+                }
                 log.setSysLogInfo();
             } else if (login_type.equals("2")) {
                 rs.execute("CRM_CustomerInfo_SByLoginID", login_id);
@@ -792,11 +802,11 @@ public class LoginUtil extends BaseBean {
             returnValue[0] = "0";
             returnValue[1] = "0";
             needdynapass = rs.getInt(2);
-
+            writeLog("idTemp:"+idTemp);
             if (needdynapass == 1) {
                 rs1.executeQuery("select id from hrmpassword where id=?", idTemp);
                 if (!rs1.next()) {
-                    rs1.executeUpdate("insert into hrmpassword(id,loginid,created) values(?,?,"+ DbFunctionUtil.getCurrentFullTimeFunction(rs.getDBType())+")", idTemp, loginid);
+                    rs1.executeUpdate("insert into hrmpassword(id,loginid,created) values(?,?,"+DbFunctionUtil.getCurrentFullTimeFunction(rs.getDBType())+")", idTemp, loginid);
                 }
             }
 
@@ -808,13 +818,16 @@ public class LoginUtil extends BaseBean {
                 //lym   20191225    是否开启EP登录验证获取LoginSession
                 boolean passwordCheck = false;
                 if(getPropValue("epcheck","openeplogincheck").equals("1")){
+                    new BaseBean().writeLog("EP验证登录");
                     this.loginSession = loginCheckUtil.getLoginSession(loginid,pass);
                     if(this.loginSession.length()>0)    passwordCheck=true;
                 }else{
+                    new BaseBean().writeLog("正常登录");
                     passwordCheck = pass.length()>0 && PasswordUtil.check(pass, passwordTemp, salt);
                 }
+                //boolean passwordCheck = pass.length()>0 && PasswordUtil.check(pass, passwordTemp, salt);
+
                 if (needdynapass != 1) {
-                    new BaseBean().writeLog("needdynapass!=1");
                     if (passwordCheck){
                         returnValue[1] = "1";
                     }
@@ -928,6 +941,7 @@ public class LoginUtil extends BaseBean {
                 }
             }
         }
+
         return returnValue;
     }
 
@@ -1012,7 +1026,7 @@ public class LoginUtil extends BaseBean {
         if (sendflag) {
             String[] pwdArr = PasswordUtil.encrypt(dynapass);
             RecordSet rs = new RecordSet();
-            rs.executeUpdate("update hrmpassword set password=? ,salt=?, created="+ DbFunctionUtil.getCurrentFullTimeFunction(rs.getDBType())+" where id=?", pwdArr[0], pwdArr[1],tmpid);
+            rs.executeUpdate("update hrmpassword set password=? ,salt=?, created="+DbFunctionUtil.getCurrentFullTimeFunction(rs.getDBType())+" where id=?", pwdArr[0], pwdArr[1],tmpid);
             upPswdJob(tmpid, sValiditySec);
         }
         return sendflag;
@@ -1157,15 +1171,16 @@ public class LoginUtil extends BaseBean {
                             String passwordLockMin = settings.getPasswordLockMin();//多少分钟后自动解锁
                             rs.executeQuery("select id from HrmResourceManager where loginid=?", loginid);
                             if (!rs.next()) {
-                                String sql = "select sumpasswordwrong from hrmresource where loginid=?";
+                                String sql = "select sumpasswordwrong,id from hrmresource where loginid=?";
                                 rs1.executeQuery(sql, loginid);
                                 rs1.next();
                                 int sumpasswordwrong = Util.getIntValue(rs1.getString(1));
+                                int userId = Util.getIntValue(rs1.getString(2),0);
                                 int sumPasswordLock = Util.getIntValue(settings.getSumPasswordLock(), 3);
                                 int leftChance = sumPasswordLock - sumpasswordwrong;
                                 if (leftChance == 0) {
                                     String now = DateUtil.getFullDate();
-                                    if (rs.getDBType().equalsIgnoreCase("oracle") || rs.getDBType().equalsIgnoreCase("dm") || rs.getDBType().equalsIgnoreCase("st")) {
+                                    if (rs.getDBType().equalsIgnoreCase("oracle")) {
                                         sql = "update HrmResource set passwordlock=1,sumpasswordwrong=0, passwordlocktime=to_date(?,'yyyy-mm-dd hh24:mi:ss'),passwordLockReason=? where loginid=?";
                                     } else {
                                         sql = "update HrmResource set passwordlock=1,sumpasswordwrong=0, passwordlocktime=?,passwordLockReason=? where loginid=?";
@@ -1173,7 +1188,8 @@ public class LoginUtil extends BaseBean {
                                     rs1.executeUpdate(sql, now, passwordLockReason, loginid);
                                     /*记录密码锁定的日志*/
                                     setIpAddress(Util.getIpAddr(request));
-                                    recordPasswordLock(loginid);
+                                    setClientType(1);
+                                    recordPasswordLock(userId,loginid);
                                     /*记录密码锁定的日志*/
                                     if (needPasswordLockMin.equals("1")) {
                                         errorMsg[2] = SystemEnv.getHtmlLabelName(24593, languageid) + sumPasswordLock + SystemEnv.getHtmlLabelName(18083, languageid)
@@ -1295,21 +1311,23 @@ public class LoginUtil extends BaseBean {
     /**
      * 记录登录失败的日志
      *
+     * @param userId  人员ID
      * @param loginId 登录账号
      * @param desc    登录失败的原因
      * @throws Exception
      */
-    public void recordFailedLogin(String loginId, String desc) {
+    public void recordFailedLogin(int userId,String loginId, String desc) {
         try {
             SysMaintenanceLog sysMaintenanceLog = new SysMaintenanceLog();
             sysMaintenanceLog.resetParameter();
-            sysMaintenanceLog.setRelatedId(0);
+            sysMaintenanceLog.setRelatedId(userId);
             sysMaintenanceLog.setRelatedName(loginId);
             sysMaintenanceLog.setOperateType("302");
             sysMaintenanceLog.setOperateDesc(desc);
             sysMaintenanceLog.setOperateItem("503");
             sysMaintenanceLog.setOperateUserid(0);
             sysMaintenanceLog.setClientAddress(this.ipAddress);
+            sysMaintenanceLog.setClientType(this.clientType);
             sysMaintenanceLog.setSysLogInfo();
         } catch (Exception e) {
             e.printStackTrace();
@@ -1319,20 +1337,22 @@ public class LoginUtil extends BaseBean {
     /**
      * 密码被锁定的日志
      *
+     * @param userId  人员ID
      * @param loginId 人员登陆账号
      * @throws Exception
      */
-    public void recordPasswordLock(String loginId) {
+    public void recordPasswordLock(int userId, String loginId) {
         try {
             SysMaintenanceLog sysMaintenanceLog = new SysMaintenanceLog();
             sysMaintenanceLog.resetParameter();
-            sysMaintenanceLog.setRelatedId(0);
+            sysMaintenanceLog.setRelatedId(userId);
             sysMaintenanceLog.setRelatedName(loginId);
             sysMaintenanceLog.setOperateType("304");
             sysMaintenanceLog.setOperateDesc(SystemEnv.getHtmlLabelName(24706, 7));
             sysMaintenanceLog.setOperateItem("506");
             sysMaintenanceLog.setOperateUserid(0);
             sysMaintenanceLog.setClientAddress(this.ipAddress);
+            sysMaintenanceLog.setClientType(this.clientType);
             sysMaintenanceLog.setSysLogInfo();
         } catch (Exception e) {
             e.printStackTrace();
@@ -1341,6 +1361,10 @@ public class LoginUtil extends BaseBean {
 
     public void setIpAddress(String ipAddress) {
         this.ipAddress = ipAddress;
+    }
+
+    public void setClientType(int clientType) {
+        this.clientType = clientType;
     }
 
     /**

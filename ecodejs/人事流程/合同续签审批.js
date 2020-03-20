@@ -4,6 +4,7 @@ var xhtlxfield = WfForm.convertFieldNameToId("xhtlxnescontracttype");//新合同
 var htqxfield = WfForm.convertFieldNameToId("htqxstaffingadmin");//合同期限
 var xhtqxkssjfield = WfForm.convertFieldNameToId("xhtqxnewcontractperiod");//新合同期限开始时间
 var xhtqxjssjfield = WfForm.convertFieldNameToId("xhtqxz");//新合同期限结束时间
+var htqxlxgsfield = WfForm.convertFieldNameToId("htqxstaffingadmin");//合同期限类型（公司）
 
 
 function DateAdd(interval, number, date) {
@@ -123,8 +124,15 @@ function default2(){
     }
 }
 
+function showTip(){
+    var htqxlxgs = WfForm.getFieldValue(htqxlxgsfield);
+    if(htqxlxgs=="0") jQuery(".tip1").show();
+    else jQuery(".tip1").hide();
+}
+
 jQuery(document).ready(function(){
     forbidSelect();
+    showTip();
 
     WfForm.bindFieldChangeEvent(rzrqfield+","+syfhtqxfield, function(obj,id,value){
         default1();
@@ -134,5 +142,9 @@ jQuery(document).ready(function(){
 
     WfForm.bindFieldChangeEvent(xhtqxkssjfield, function(obj,id,value){
         default2();
+    });
+
+    WfForm.bindFieldChangeEvent(htqxlxgsfield, function(obj,id,value){
+        showTip();
     });
 })

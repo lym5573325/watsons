@@ -48,13 +48,10 @@ public class LoginCheckUtil {
     public String getLoginSession(HttpServletRequest request,String loginid, String password){
         HttpSession httpSession = request.getSession();
         String loginsession = Util.null2String(httpSession.getAttribute("ep_loginsession"));
-        bb.writeLog("loginsession:"+loginsession);
         if(loginsession.length()>0) return loginsession;
         else {
             loginsession = getLoginSession(loginid, password);
-            bb.writeLog("loginsession2:"+loginsession);
             if(loginsession.length()>0) httpSession.setAttribute("ep_loginsession",loginsession);
-            bb.writeLog("loginsession3:"+Util.null2String(httpSession.getAttribute("ep_loginsession")));
         }
         return loginsession;
     }
@@ -66,27 +63,20 @@ public class LoginCheckUtil {
      * @return
      */
     private JSONObject  loginCheckRequest(String loginid, String password){
-        bb.writeLog("loginCheckRequest");
         JSONObject responseInfo = null;
         BaseBean bb = new BaseBean();
 
-        bb.writeLog("账号:"+loginid);
-        bb.writeLog("密码:"+password);
         TokenInfoUtil tokenInfoUtil = new TokenInfoUtil();
         //获取token信息
         String token = tokenInfoUtil.getToken();
         String encrykey = tokenInfoUtil.getEncrykey();
-        bb.writeLog("token:"+token+"     encrykey:"+encrykey);
 
         if(StringUtils.isNotBlank(token) && StringUtils.isNotBlank(encrykey)){//请求TOKEN成功
-            bb.writeLog("开始请求登录验证");
             try {
                 JSONObject requestInfo = new JSONObject();
                 //加密账号密码
                 String loginid_en = DES.encrypt(loginid, encrykey);
                 String password_en = DES.encrypt(password, encrykey);
-                bb.writeLog("加密后的账号:"+loginid_en);
-                bb.writeLog("加密后的密码:"+password_en);
 
                 requestInfo.put("token",token);
                 requestInfo.put("empno",loginid_en);

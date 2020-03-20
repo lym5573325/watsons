@@ -1,5 +1,7 @@
 package com.engine.sync.cmd.organizationHrms;
 
+import com.engine.sync.util.LocationUtils;
+import com.engine.sync.util.OrgUtil;
 import weaver.conn.RecordSet;
 
 public class AddOrganizationHrmsCmd {
@@ -20,11 +22,16 @@ public class AddOrganizationHrmsCmd {
      * @param modified  最后修改时间
      * @return
      */
-    public boolean addOrg(String departmentcode,String departmentmark,String departmentname,String supdepid,int subcompanyid1,int tlevel,int creater,String created,int modifier,String modified,String allSupdepid){
+    public static boolean addOrg(String departmentcode,String departmentmark,String departmentname,String supdepid,int subcompanyid1,int tlevel,int creater,String created,int modifier,String modified,String allSupdepid){
         return  new RecordSet().executeUpdate(addSql,departmentcode,departmentmark,departmentname,supdepid,subcompanyid1+"",tlevel+"",creater+"",modifier+"", allSupdepid);
     }
 
-
-
-
+    protected  boolean addCusData(String departmentcode,String locationCode){
+        RecordSet rs = new RecordSet();
+        int departmentid = OrgUtil.getOrgidByCode(departmentcode);
+        if(departmentid>0) {
+            return rs.executeUpdate("insert into hrmdepartmentdefined(deptid,location) values (?,?)", departmentid, LocationUtils.getLocationIdByCode(locationCode));
+        }
+        return false;
+    }
 }
