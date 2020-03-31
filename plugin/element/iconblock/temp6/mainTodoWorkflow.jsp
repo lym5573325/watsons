@@ -100,13 +100,16 @@
 				cursor = "pointer";
 					
 					//var item = "<div class='block-item' title='待办数量:<%=todoNum%>' url='/spa/workflow/static/index.html?e9timestamp=1578398788713#/main/workflow/listDoing?menuldus=1,13qe' style='width:"+width+"%;height:100%;cursor:"+cursor+"'> "+
-					var item = "<div class='block-item' title='待办数量:<%=todoNum%>' url='/wui/index.html#/main/workflow/listDoing?menuldus=1,13qe' style='width:"+width+"%;height:100%;cursor:"+cursor+"'> "+
-						"<div height='100px'>"+
-						"	<img alt='' class='' width='85px' "+
-						"		src='/plugin/element/uploadImg/59.png'> "+
-						"	<div class='block-item-content'> "+
-						"		<div class='block-item-title'> "+
-						"			<a href=\"javascript:void(0);\" style=\"cursor:"+cursor+"\"  title='查看待办'>待办数量:<%=todoNum%></a> "+
+					var item = "<div class='block-item' title='待办数量:<%=todoNum%>' url='/wui/index.html#/main/workflow/listDoing?menuldus=1,13qe' style='width:"+width+"%;height:130px;cursor:"+cursor+"'> "+
+						"<div style='margin-top: 15px'>"+
+						"	<div style='float:left;display:inlin;margin-left: 20%;'><img alt='' class='' width='80px' "+
+						"		src='/plugin/element/uploadImg/tdwf.png'> </div>"+
+						"	<div class='block-item-content' style='display:inline;float:left;margin-left: 15px;'> "+
+						"		<div class='block-item-title' style='font-size:35px'> "+
+						"			<a href=\"javascript:void(0);\" style=\"cursor:"+cursor+"\"  title='查看待办'><%=todoNum%></a> "+
+						"		</div> "+
+						"		<div class='block-item-title' style='font-size:16px'> "+
+						"			<a href=\"javascript:void(0);\" style=\"cursor:"+cursor+"\"  title='查看待办'>待办数量</a> "+
 						"		</div> "+
 						"	</div> "+
 						"</div>"+

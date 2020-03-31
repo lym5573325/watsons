@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"%>
 <%@ page import="org.json.JSONObject"%>
+<%@ page import="weaver.general.Util" %>
+<%@ page import="java.util.Enumeration" %>
 <%@ include file="/systeminfo/init_wev8.jsp"%>
 <jsp:useBean id="rs" class="weaver.conn.RecordSet" scope="page" />
 <%
@@ -65,7 +67,7 @@
 							//document.writeln("请求成功:"+data.data);
 							var datas = data.data;
 							//var colnum = Number(data.colnum);
-							var colnum = "8";
+							var colnum = "6";
 							var width = (100 / colnum);
 							var url = "";
 							var cursor = "auto";

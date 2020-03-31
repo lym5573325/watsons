@@ -17,6 +17,8 @@ import org.json.JSONObject;
 import weaver.general.BaseBean;
 
 import java.io.File;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.nio.charset.Charset;
 
 public class EdmsHttpUtils {
@@ -101,7 +103,7 @@ public class EdmsHttpUtils {
      */
     public String loadDocumentType(String docTypeName){
         String resString = "";
-        HttpGet httpGet = new HttpGet(loadDocumentTypeUrl+"?docTypeName="+docTypeName);
+        HttpGet httpGet = new HttpGet(loadDocumentTypeUrl+"?docTypeName="+encodeURIComponent(docTypeName));
         JSONObject resInfo;
         try{
             resString = EntityUtils.toString(httpClient.execute(httpGet).getEntity());
@@ -279,5 +281,27 @@ public class EdmsHttpUtils {
         logout();
         return success;
     }
+
+    public static String encodeURIComponent(String s) {
+        String result = null;
+
+        try {
+            result = URLEncoder.encode(s, "UTF-8")
+                    .replaceAll("\\+", "%20")
+                    .replaceAll("\\%21", "!")
+                    .replaceAll("\\%27", "'")
+                    .replaceAll("\\%28", "(")
+                    .replaceAll("\\%29", ")")
+                    .replaceAll("\\%7E", "~");
+        }
+
+        // This exception should never occur.
+        catch (UnsupportedEncodingException e) {
+            result = s;
+        }
+
+        return result;
+    }
+
 
 }

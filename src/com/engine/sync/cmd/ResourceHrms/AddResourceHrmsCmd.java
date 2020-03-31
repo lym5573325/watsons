@@ -11,7 +11,7 @@ public class AddResourceHrmsCmd {
     private static final String addSql = "insert into hrmresource (id,workcode,lastname,departmentid,subcompanyid1," +
             "jobtitle,mobile,usekind,companystartdate,status,joblevel,loginid,lastmoddate,modified,creater,created,seclevel," +
             "pinyinlastname,ecology_pinyin_search)" +
-            "values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,sysdate,?,sysdate,?,?,?)";
+            "values (?,?,?,?,?,?,?,?,?,?,?,?,?,sysdate,?,sysdate,?,?,?)";
 
 
     //protected boolean execute(String workcode, String lastname, String managerid,String departmentid, String subcompanyid1 ){

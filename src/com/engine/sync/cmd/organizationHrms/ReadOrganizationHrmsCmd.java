@@ -50,7 +50,7 @@ public class ReadOrganizationHrmsCmd {
             String supdepid = getSupdepidByHrmsOrgID(bean.getHrms_OrgId());
             bean.setSupdepid(supdepid);
             //部门名称转换  将"&"转成"."
-            bean.setDeptName(bean.getDeptName().replaceAll("&","."));
+            bean.setDeptName(bean.getDeptName().replaceAll("&",".").replaceAll("/",".").replaceAll("·","."));
             //获取所有上级部门
             try {
                 String allSupdepid = DepartmentComInfo.getAllParentDepartId(supdepid, supdepid);

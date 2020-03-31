@@ -3,6 +3,7 @@ package com.engine.sync.cmd.organizationHrms;
 import com.engine.sync.util.LocationUtils;
 import com.engine.sync.util.OrgUtil;
 import weaver.conn.RecordSet;
+import weaver.matrix.MatrixUtil;
 
 public class AddOrganizationHrmsCmd {
 
@@ -26,11 +27,14 @@ public class AddOrganizationHrmsCmd {
         return  new RecordSet().executeUpdate(addSql,departmentcode,departmentmark,departmentname,supdepid,subcompanyid1+"",tlevel+"",creater+"",modifier+"", allSupdepid);
     }
 
-    protected  boolean addCusData(String departmentcode,String locationCode){
+    protected  static boolean addCusData(String departmentcode,String locationCode){
         RecordSet rs = new RecordSet();
         int departmentid = OrgUtil.getOrgidByCode(departmentcode);
         if(departmentid>0) {
-            return rs.executeUpdate("insert into hrmdepartmentdefined(deptid,location) values (?,?)", departmentid, LocationUtils.getLocationIdByCode(locationCode));
+            if(rs.executeUpdate("insert into hrmdepartmentdefined(deptid,location) values (?,?)", departmentid, LocationUtils.getLocationIdByCode(locationCode))) {
+                MatrixUtil.updateDepartmentData("" + departmentid);
+                return true;
+            }
         }
         return false;
     }

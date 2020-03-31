@@ -26,7 +26,7 @@ public class HandleOrganizationHrmsCmd {
                 //baseBean.writeLog("新增部门");
                 //System.out.println("新增部门");
                 if(addOrganizationHrmsCmd.addOrg(bean.getDeptCode(), bean.getDeptName(), bean.getDeptName(), bean.getSupdepid(), OrganizationHrmsBean.subcompanyid, Util.getIntValue(bean.getDeptlevel()), 1, "", 1, "", bean.getAllSupdepid()))
-                    if(bean.getAddress().length()>0)    updateOrganizationHrmsCmd.updateCusData(bean.getDeptCode(), bean.getAddress());
+                    if(bean.getAddress().length()>0)    AddOrganizationHrmsCmd.addCusData(bean.getDeptCode(), bean.getAddress());
             }
         }else{
             new BaseBean().writeLog("部门信息为空:"+bean.toString());

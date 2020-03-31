@@ -45,12 +45,12 @@
 				var url = "";
 				cursor = "pointer";
 					
-					var item = "<div class='block-item' title='新建流程' url='/wui/index.html#/main/workflow/add?menuIds=1,12&_key=1cmt0m' style='width:"+width+"%;height:100%;cursor:"+cursor+"'> "+
-					    "<div height='100px'>"+
-						"	<img alt='' class='' width='85px' "+
-						"		src='/plugin/element/uploadImg/59.png'> "+
-						"	<div class='block-item-content'> "+
-						"		<div class='block-item-title'> "+
+					var item = "<div class='block-item' title='新建流程' url='/wui/index.html#/main/workflow/add?menuIds=1,12&_key=1cmt0m' style='width:"+width+"%;height:130px;cursor:"+cursor+"'> "+
+					    "<div style='margin-top: 15px'>"+
+						"	<div style='float:left;display:inlin;margin-left: 20%;'><img alt='' class='' width='80px' "+
+						"		src='/plugin/element/uploadImg/cwf.png'> </div>"+
+						"	<div class='block-item-content' style='display:inline;float:left;margin-left: 15px;margin-top:25px'> "+
+						"		<div class='block-item-title' style='font-size:16px'> "+
 						"			<a href=\"javascript:void(0);\" style=\"cursor:"+cursor+"\"  title='新建流程'>新建流程</a> "+
 						"		</div> "+
 						"	</div> "+

@@ -10,7 +10,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     new BaseBean().writeLog("===PositionHrmsServiceImpl===");
-    File file = new File("C:\\Users\\hrpt.support\\Desktop\\syncinfo\\WTCCN-ERMS-POSITION-20190903103846.txt");
+    File file = new File("/app/lym/sync20200329/WTCCN-ERMS-POSITION-20200329124949.txt");
     HandlePositionHrmsCmd cmd = new HandlePositionHrmsCmd();
     if(file.exists()){
         BufferedReader reader = null;
@@ -20,9 +20,11 @@
             //reader = new BufferedReader(new InputStreamReader(new FileInputStream(file),"UTF-8"));
             reader = new BufferedReader(new InputStreamReader(new FileInputStream(file),"UTF-8"));
             while((tempString = reader.readLine()) != null){
-                PositionHrmsBean bean = new ReadPositionHrmsCmd(tempString).getBean();
-                new BaseBean().writeLog("第" + line + "行:" + bean.toString());
-                //cmd.handle(bean);
+                if(line>=3) {
+                    PositionHrmsBean bean = new ReadPositionHrmsCmd(tempString).getBean();
+                    new BaseBean().writeLog("第" + line + "行:" + bean.toString());
+                    cmd.handle(bean);
+                }
                 line++;
             }
 

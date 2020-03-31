@@ -6,7 +6,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     new BaseBean().writeLog("===OrganizationHrmsServiceImpl===");
-    File file = new File("C:\\Users\\hrpt.support\\Desktop\\syncinfo\\WTCCN-ERMS-ORG-20190903103812.txt");
+    File file = new File("/app/lym/sync20200329/WTCCN-ERMS-ORG-20200329124938.txt");
     HandleOrganizationHrmsCmd cmd = new HandleOrganizationHrmsCmd();
     if(file.exists()){
         BufferedReader reader = null;
@@ -15,10 +15,15 @@
         try{
             //reader = new BufferedReader(new InputStreamReader(new FileInputStream(file),"UTF-8"));
             reader = new BufferedReader(new InputStreamReader(new FileInputStream(file),"UTF-8"));
-            while((tempString = reader.readLine()) != null){
-                OrganizationHrmsBean bean = new ReadOrganizationHrmsCmd(tempString).getBean();
-                new BaseBean().writeLog("第" + line + "行:" + bean.toString());
-                //cmd.handle(bean);
+
+
+
+            while((tempString = reader.readLine()) != null ){
+                if(line>=3) {
+                    OrganizationHrmsBean bean = new ReadOrganizationHrmsCmd(tempString).getBean();
+                    new BaseBean().writeLog("第" + line + "行:" + bean.toString());
+                    cmd.handle(bean);
+                }
                 line++;
             }
         }catch (Exception e){

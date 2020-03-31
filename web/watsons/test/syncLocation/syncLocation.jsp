@@ -6,9 +6,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     new BaseBean().writeLog("===LocationHrmsServiceImpl===");
-    File file = new File("C:\\Users\\hrpt.support\\Desktop\\syncinfo\\WTCCN-ERMS-LOCATION-20190903103809.txt.txt");
+    File file = new File("/app/lym/sync20200329/WTCCN-ERMS-LOCATION-20200329124929.txt");
     HandleLocationHrmsCmd handle = new HandleLocationHrmsCmd();
     if(file.exists()){
+        out.print("文件存在");
         BufferedReader reader = null;
         String tempString = null;
         int line = 1;
@@ -17,7 +18,7 @@
             while((tempString = reader.readLine()) != null){
                 LocationHrmsBean bean = new ReadLocationHrmsCmd(tempString).getBean();
                 new BaseBean().writeLog("第" + line + "行："+ bean.toString());
-                //handle.handle(bean);
+                handle.handle(bean);
                 line++;
             }
         }catch (Exception e){
@@ -30,6 +31,9 @@
                     e.printStackTrace();
                 }
             }
+
         }
+        out.print("更新完成===>共"+line+"行");
     }
+    out.print("更新完成");
 %>

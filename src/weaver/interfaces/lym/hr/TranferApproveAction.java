@@ -73,6 +73,7 @@ public class TranferApproveAction extends BaseBean implements Action {
         //申请人
         int sqr = Util.getIntValue(mainTableInfo.get("applier"));
         String sxrq = Util.null2String(mainTableInfo.get(""));//生效日期
+        int mkt = Util.getIntValue(mainTableInfo.get("mkt"));
         boolean isBeforeSxrq = TimeUtil.dateInterval(currentDate, sxrq)>0 ? true : false;//是否在生效日期之前 true=>是
         TimeUtil.dateInterval(TimeUtil.getCurrentDateString(),sxrq);
         writeLog("yhc:"+yhc+"   xhc:"+xhc);
@@ -85,7 +86,7 @@ public class TranferApproveAction extends BaseBean implements Action {
 
                 /*新成成的hccode*/
                 int hcjckfy = Util.getIntValue(mainTableInfo.get("hcjc"));
-                int hccodekfs = HcMode.getMaxxhByHcjc(hcjckfy)+1;
+                int hccodekfs = HcMode.getMaxxhByHcjc(hcjckfy,mkt)+1;
                 String xh = hccodekfs<1000? new DecimalFormat("000").format(hccodekfs) : hccodekfs+"";
                 String hccode = HcjcMode.getHcjc(hcjckfy) + xh;
                 writeLog("hcjckfy:"+hcjckfy+"   xh:"+xh+"    hccode："+hccode+"    recruitmentstatus:"+Util.null2String(rs.getString("recruitmentstatus")));

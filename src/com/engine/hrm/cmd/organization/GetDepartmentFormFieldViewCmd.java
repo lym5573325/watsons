@@ -1,10 +1,12 @@
 package com.engine.hrm.cmd.organization;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
+import com.api.browser.bean.SearchConditionItem;
+import com.api.hrm.bean.HrmFieldBean;
+import com.api.hrm.util.HrmFieldSearchConditionComInfo;
+import com.engine.common.biz.AbstractCommonCommand;
+import com.engine.common.entity.BizLogContext;
+import com.engine.core.interceptor.CommandContext;
+import com.engine.hrm.util.HrmOrganizationUtil;
 import weaver.conn.RecordSet;
 import weaver.general.BaseBean;
 import weaver.general.Util;
@@ -14,13 +16,10 @@ import weaver.hrm.definedfield.HrmFieldComInfo;
 import weaver.hrm.definedfield.HrmFieldGroupComInfo;
 import weaver.systeminfo.SystemEnv;
 
-import com.api.browser.bean.SearchConditionItem;
-import com.api.hrm.bean.HrmFieldBean;
-import com.api.hrm.util.HrmFieldSearchConditionComInfo;
-import com.engine.common.biz.AbstractCommonCommand;
-import com.engine.common.entity.BizLogContext;
-import com.engine.core.interceptor.CommandContext;
-import com.engine.hrm.util.HrmOrganizationUtil;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class GetDepartmentFormFieldViewCmd extends AbstractCommonCommand<Map<String, Object>> {
 
@@ -31,7 +30,6 @@ public class GetDepartmentFormFieldViewCmd extends AbstractCommonCommand<Map<Str
 
 	@Override
 	public Map<String, Object> execute(CommandContext commandContext) {
-		new BaseBean().writeLog("GetDepartmentFormFieldViewCmd");
 		Map<String, Object> retmap = new HashMap<String, Object>();
 		List<Map<String, Object>> grouplist = new ArrayList<Map<String, Object>>();
 		Map<String, Object> groupitem = null;

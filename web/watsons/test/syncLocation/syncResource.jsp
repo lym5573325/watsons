@@ -6,15 +6,16 @@
 <%@ page import="com.engine.sync.entity.ResourceHrmsBean" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    File file = new File("C:\\Users\\Ming\\Desktop\\Employee-20191206.txt");
+    File file = new File("/app/lym/sync20200329/Employee-20200329.txt");
     if(file.exists()){
+        out.print("文件存在");
         HandleResourceHrmsCmd cmd = new HandleResourceHrmsCmd();
         BufferedReader reader = null;
         String tempString = null;
         int line = 1;
         try{
             reader = new BufferedReader(new InputStreamReader(new FileInputStream(file),"GBK"));
-            while((tempString = reader.readLine()) != null && line<100){
+            while((tempString = reader.readLine()) != null){
                 //new BaseBean().writeLog("第" + line + "行长度:" + tempString.getBytes("gbk").length);
                 //new BaseBean().writeLog("beanInfo：{" + new ReadResourceHrmsCmd(tempString).getBean().toString() + "}");
                 ResourceHrmsBean bean = new ReadResourceHrmsCmd(tempString).getBean();
@@ -22,6 +23,7 @@
                 line++;
             }
         }catch (Exception e){
+            out.print("异常:"+e.toString());
             e.printStackTrace();
         }finally {
             if(reader != null){

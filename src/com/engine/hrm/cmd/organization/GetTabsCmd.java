@@ -1,17 +1,17 @@
 package com.engine.hrm.cmd.organization;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
+import com.engine.common.biz.AbstractCommonCommand;
+import com.engine.common.entity.BizLogContext;
+import com.engine.core.interceptor.CommandContext;
 import weaver.general.BaseBean;
 import weaver.general.Util;
 import weaver.hrm.User;
 import weaver.systeminfo.SystemEnv;
-import com.engine.common.biz.AbstractCommonCommand;
-import com.engine.common.entity.BizLogContext;
-import com.engine.core.interceptor.CommandContext;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class GetTabsCmd extends AbstractCommonCommand<Map<String, Object>> {
 
@@ -22,7 +22,6 @@ public class GetTabsCmd extends AbstractCommonCommand<Map<String, Object>> {
 
     @Override
     public Map<String, Object> execute(CommandContext commandContext) {
-        new BaseBean().writeLog("111");
         Map<String,Object> retmap = new HashMap<String,Object>();
         try{
             List<Map<String,Object>> tabs = new ArrayList<Map<String,Object>>();
@@ -59,16 +58,20 @@ public class GetTabsCmd extends AbstractCommonCommand<Map<String, Object>> {
                 tab.put("key", "1");
                 tab.put("title", SystemEnv.getHtmlLabelName(16289,user.getLanguage()));
                 tabs.add(tab);
-
+                /*
                 tab = new HashMap<String, Object>();
                 tab.put("key", "2");
                 tab.put("title", SystemEnv.getHtmlLabelName(17587,user.getLanguage()));
                 tabs.add(tab);
 
+                 */
+                /*
                 tab = new HashMap<String, Object>();
                 tab.put("key", "3");
                 tab.put("title", SystemEnv.getHtmlLabelName(179,user.getLanguage()));
-                //tabs.add(tab);
+                tabs.add(tab);
+
+                 */
             }
             retmap.put("status", "1");
             retmap.put("tabs", tabs);

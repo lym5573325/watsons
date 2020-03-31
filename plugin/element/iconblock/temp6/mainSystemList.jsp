@@ -67,13 +67,13 @@
 							//document.writeln("请求成功:"+data.data);
 							var datas = data.data;
 							//var colnum = Number(data.colnum);
-							var colnum = "6";
+							var colnum = "8";
 							var width = (100 / colnum);
 							var url = "";
 							var cursor = "auto";
 							
 							datas.map(function(elt, i) {
-								if(elt.sysclassify=="1"){
+
 									if(elt.url && elt.url!=""){
 										url = elt.url;
 										cursor = "pointer";
@@ -101,7 +101,7 @@
 										"</div> ";
 										//document.writeln("<br><br>item:"+item);
 									$(".containerdiv").append(item);	
-								}
+
 							});
 						}
 					}

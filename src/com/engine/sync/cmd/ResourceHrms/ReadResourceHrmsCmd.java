@@ -184,6 +184,9 @@ public class ReadResourceHrmsCmd {
             if(bean.getTempfield10().length()>0) bean.setTempfield9(bean.getTempfield10());
             //成本中心
             if(bean.getTempfield12().length()>0) bean.setTempfield11(bean.getTempfield12());
+
+            /*处理特殊符号*/
+            bean.setLastname(bean.getLastname().replaceAll("·","."));
         }
         return bean;
     }
